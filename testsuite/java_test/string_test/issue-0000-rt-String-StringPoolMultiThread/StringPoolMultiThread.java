@@ -35,15 +35,12 @@ public class StringPoolMultiThread {
             System.out.println(e);
             StringPoolMultiThread.res = StringPoolMultiThread.res - 10;
         }
-//        System.out.println(result);
-//        System.out.println(StringPoolMultiThread.res);
         if (result == 3 && StringPoolMultiThread.res == 97){
             result =0;
         }
         return result;
     }
     public static  int StringPoolMultiThread_1() throws InterruptedException, ExecutionException {
-        int result1 = 4; /*STATUS_FAILED*/
         int length = StringPoolMultiThread.stringCountForEveryThread;// 3000
         int threadn = StringPoolMultiThread.threadCount; //16
         for (int i=0;i<length;i++) {
@@ -53,20 +50,10 @@ public class StringPoolMultiThread {
                 /* 启动线程时会返回一个Future对象,可以通过future对象获取现成的返回值。
                  * 在执行future.get()时，主线程会堵塞，直至当前future线程返回结果。
                 */
-
                 res[j]=executorService.submit(new ThreadWithCallback(i,j)).get();
-//                System.out.println("============ result in thread: "+res[j]);
             }
             executorService.shutdown();
-            while (true) {
-                if (executorService.isTerminated()) {
-                    break;
-                }
-                Thread.sleep(1000);
-            }
             for (int k = 0; k < threadn-1; k++) {
-//                System.out.println("== return =="+res[k]);
-//                System.out.println("== return =="+res[k+1]);
                 if (res[k] != res[k+1]){
                     return 10;
                 }else {
@@ -88,11 +75,9 @@ public class StringPoolMultiThread {
         @Override
         //相当于Thread的run方法
         public Object call() {
-//            System.out.println("== threadname: "+name+"  == count:"+count + " ==");
             try {
                 String  s= Integer.toHexString(count);
                 result=s.intern();
-//                System.out.println("== result in run: "+result);
             } catch (Exception e) {
                 System.out.println(e);
             }
