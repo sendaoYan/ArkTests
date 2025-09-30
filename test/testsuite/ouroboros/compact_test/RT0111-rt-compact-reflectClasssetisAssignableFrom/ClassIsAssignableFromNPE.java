@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: ClassIsAssignableFromNPE
  *- @RequirementName: Java Reflection

@@ -1,3 +1,4 @@
+/* @test */
 /*
  * - @TestCaseID: FieldGetAnnotation.java
  *- @RequirementName: Java Reflection

@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID:maple/runtime/rc/function/FinalizerRef.java
  *- @TestCaseName:MyselfClassName

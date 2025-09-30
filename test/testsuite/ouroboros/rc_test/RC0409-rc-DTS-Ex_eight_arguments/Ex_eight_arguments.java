@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID:Ex_eight_arguments_static.java
  *- @TestCaseName:MyselfClassName

@@ -1,3 +1,4 @@
+/* @test */
 /*
  * - @TestCaseID: ClassGetEnumConstants
  *- @RequirementName: Java Reflection

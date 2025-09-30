@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: ConstructorMultiThreadTest.java
  *- @RequirementName: Java Reflection

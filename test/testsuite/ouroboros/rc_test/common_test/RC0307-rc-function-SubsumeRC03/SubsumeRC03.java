@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID:maple/runtime/rc/function/SubsumeRC03.java
  *- @TestCaseName:MyselfClassName

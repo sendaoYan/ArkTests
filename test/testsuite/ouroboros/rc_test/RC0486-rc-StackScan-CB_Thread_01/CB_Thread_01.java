@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: Maple_MemoryManagement2.0_CB_Thread_01
  *- @TestCaseName: CB_Thread_01

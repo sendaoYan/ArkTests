@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID:OOMtest.java
  *- @TestCaseName:MyselfClassName

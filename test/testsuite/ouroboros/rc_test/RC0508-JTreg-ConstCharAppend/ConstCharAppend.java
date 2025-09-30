@@ -1,3 +1,4 @@
+/* @test */
 /*
  * -@TestCaseID: ConstCharAppend
  * -@TestCaseName: ConstCharAppend

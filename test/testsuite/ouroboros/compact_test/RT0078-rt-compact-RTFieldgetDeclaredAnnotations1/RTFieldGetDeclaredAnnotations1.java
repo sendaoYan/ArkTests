@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: RTFieldGetDeclaredAnnotations1
  *- @RequirementName: Java Reflection

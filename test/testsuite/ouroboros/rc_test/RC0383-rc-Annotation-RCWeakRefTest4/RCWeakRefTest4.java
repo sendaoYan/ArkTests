@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID:maple/runtime/rc/function/RCWeakRefTest4.java
  *- @TestCaseName:MyselfClassName

@@ -1,3 +1,4 @@
+/* @test */
 /*
  * - @TestCaseID: ConstructorGetAnnotation.java
  *- @RequirementName: Java Reflection

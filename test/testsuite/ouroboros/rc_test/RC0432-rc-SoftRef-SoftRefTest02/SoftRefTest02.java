@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID:SoftRefTest02.java
  *- @TestCaseName:MyselfClassName

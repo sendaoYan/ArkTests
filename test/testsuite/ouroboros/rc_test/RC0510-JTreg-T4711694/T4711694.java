@@ -1,3 +1,4 @@
+/* @test */
 /*
  * -@TestCaseID: T4711694
  * -@TestCaseName: T4711694

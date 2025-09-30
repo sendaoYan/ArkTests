@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID:Alloc_41_45x8B
  *- @TestCaseName:MyselfClassName

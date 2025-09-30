@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: ClassInitClassNewInstance
  *- @RequirementName: Java Reflection

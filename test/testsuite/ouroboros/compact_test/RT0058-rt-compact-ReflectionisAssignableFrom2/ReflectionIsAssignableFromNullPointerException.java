@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: ReflectionIsAssignableFromNullPointerException
  *- @RequirementName: Java Reflection

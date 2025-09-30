@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: RefProCase/RefProcessor/src/NotIsCleanerNotFreeRefFailSetWCBSetAtomicWCB.java
  *- @TestCaseName:MyselfClassName

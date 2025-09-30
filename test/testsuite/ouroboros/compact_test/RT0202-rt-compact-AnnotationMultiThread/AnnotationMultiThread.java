@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: Maple_MethodHandle_invoke_AnnotationMultiThread
  *- @RequirementName: Java Reflection

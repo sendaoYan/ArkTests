@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: Maple_MemoryManagement2.0_TriggerGCTest01
  *- @TestCaseName: TriggerGCTest01

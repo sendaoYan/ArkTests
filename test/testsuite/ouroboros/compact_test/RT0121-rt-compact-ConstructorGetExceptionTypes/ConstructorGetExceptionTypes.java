@@ -1,3 +1,4 @@
+/* @test */
 /*
  * - @TestCaseID: ConstructorGetExceptionTypes.java
  *- @RequirementName: Java Reflection

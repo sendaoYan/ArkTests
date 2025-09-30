@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: RTProxyGetProxyClass1
  *- @RequirementName: Java Reflection

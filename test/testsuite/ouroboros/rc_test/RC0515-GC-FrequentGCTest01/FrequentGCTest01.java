@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: GC-TaskQueue-FrequentGCTest01
  *- @TestCaseName: GC-TaskQueue-FrequentGCTest01

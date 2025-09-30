@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: Maple_MemoryManagement2.0_GCOnly_WeakRefTest04
  *- @TestCaseName: GCOnly_WeakRefTest04

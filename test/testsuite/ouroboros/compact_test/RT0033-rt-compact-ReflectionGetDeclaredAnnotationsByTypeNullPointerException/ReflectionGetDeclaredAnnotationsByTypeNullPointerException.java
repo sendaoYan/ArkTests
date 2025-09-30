@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: ReflectionGetDeclaredAnnotationsByTypeNullPointerException
  *- @RequirementName: Java Reflection

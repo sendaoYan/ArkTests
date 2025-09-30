@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: Maple_MemoryManagement2.0_StartupInvoke_01
  *- @TestCaseName: StartupInvoke_01

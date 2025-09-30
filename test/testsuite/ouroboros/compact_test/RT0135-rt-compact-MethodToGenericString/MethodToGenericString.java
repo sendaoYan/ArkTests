@@ -1,3 +1,4 @@
+/* @test */
 /*
  * - @TestCaseID: MethodToGenericString
  *- @RequirementName: Java Reflection

@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: Maple_MemoryManagement2.0_FrequentSystemGC_01
  *- @TestCaseName: FrequentSystemGC_01

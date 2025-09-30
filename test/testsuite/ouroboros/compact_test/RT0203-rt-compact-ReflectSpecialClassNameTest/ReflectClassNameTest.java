@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: Maple_Annotation_invoke_AnnotationSetTest
  *- @RequirementName: Java Reflection

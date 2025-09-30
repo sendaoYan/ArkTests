@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: RTParameterGetAnnotationsByType2
  *- @RequirementName: Java Reflection

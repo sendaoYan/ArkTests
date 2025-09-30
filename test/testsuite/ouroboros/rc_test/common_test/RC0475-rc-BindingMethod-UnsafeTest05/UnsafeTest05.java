@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: Maple_MemoryManagement2.0_UnsafeTest05
  *- @TestCaseName: UnsafeTest05

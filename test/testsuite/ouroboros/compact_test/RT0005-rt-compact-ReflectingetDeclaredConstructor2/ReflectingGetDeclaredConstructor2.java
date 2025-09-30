@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: ReflectingGetDeclaredConstructor2
  *- @RequirementName: Java Reflection

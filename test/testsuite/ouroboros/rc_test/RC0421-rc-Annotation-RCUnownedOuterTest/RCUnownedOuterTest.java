@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID:maple/runtime/rc/annotation/RCUnownedOuterTest
  *- @TestCaseName:MyselfClassName

@@ -1,3 +1,4 @@
+/* @test */
 package com.huawei;
 
 import java.util.Arrays;

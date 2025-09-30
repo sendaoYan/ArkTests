@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: ReflectionIsLocalClass
  *- @RequirementName: Java Reflection

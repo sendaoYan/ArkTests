@@ -1,3 +1,4 @@
+/* @test */
 
 /*
  *- @TestCaseID:maple/runtime/rc/function/RC_newObjectToField_02.java

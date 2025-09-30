@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: Maple_MemoryManagement2.0_FinalizerReferenceTest01
  *- @TestCaseName: FinalizerReferenceTest01

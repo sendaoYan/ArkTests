@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: RTModifierParameterModifiers
  *- @RequirementName: Java Reflection

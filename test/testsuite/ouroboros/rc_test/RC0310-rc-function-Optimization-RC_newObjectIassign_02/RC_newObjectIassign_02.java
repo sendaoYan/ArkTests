@@ -1,3 +1,4 @@
+/* @test */
 
 /*
  *- @TestCaseID:maple/runtime/rc/function/RC_newObjectIassign_02.java

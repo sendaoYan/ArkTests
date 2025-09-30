@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: maple/runtime/rc/function/Ref_Processor_Weak_Ref_Boundary.java
  *- @TestCaseName:MyselfClassName

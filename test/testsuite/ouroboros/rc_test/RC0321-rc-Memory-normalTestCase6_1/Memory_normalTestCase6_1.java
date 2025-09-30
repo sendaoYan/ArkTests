@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID:rc/stress/Memory_normalTestCase6_1.java
  *- @TestCaseName:MyselfClassName

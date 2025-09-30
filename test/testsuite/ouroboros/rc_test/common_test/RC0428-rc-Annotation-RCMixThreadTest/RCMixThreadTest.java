@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID:maple/runtime/rc/annotation/Permanent/RCMixThreadTest
  *- @TestCaseName:MyselfClassName

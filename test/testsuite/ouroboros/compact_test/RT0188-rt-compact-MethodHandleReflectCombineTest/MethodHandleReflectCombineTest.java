@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: MethodHandleReflectCombineTest.java
  *- @RequirementName: Java Reflection

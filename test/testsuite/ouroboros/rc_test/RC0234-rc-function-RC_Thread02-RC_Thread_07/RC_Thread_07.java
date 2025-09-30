@@ -1,3 +1,4 @@
+/* @test */
 /*
  * -@TestCaseID:RC_Thread_07.java
  * -@TestCaseName:MyselfClassName

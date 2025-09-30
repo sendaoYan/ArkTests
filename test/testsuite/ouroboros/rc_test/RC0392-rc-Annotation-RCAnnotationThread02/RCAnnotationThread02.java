@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID:maple/runtime/rc/function/RC_Thread02/RCAnnotationThread02.java
  *- @TestCaseName:MyselfClassName

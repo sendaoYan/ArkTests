@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID:stackAllocField.java
  *- @TestCaseName:MyselfClassName

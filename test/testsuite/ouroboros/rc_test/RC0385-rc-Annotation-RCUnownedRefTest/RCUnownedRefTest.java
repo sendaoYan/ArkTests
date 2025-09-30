@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID:rc/unownedRef/RCUnownedRefTest.java
  *- @TestCaseName:MyselfClassName

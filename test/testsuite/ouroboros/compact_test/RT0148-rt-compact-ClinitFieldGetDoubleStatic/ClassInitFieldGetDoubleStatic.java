@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: ClassInitFieldGetDoubleStatic
  *- @RequirementName: Java Reflection

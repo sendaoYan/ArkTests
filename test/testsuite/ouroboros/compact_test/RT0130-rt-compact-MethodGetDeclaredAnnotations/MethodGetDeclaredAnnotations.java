@@ -1,3 +1,4 @@
+/* @test */
 /*
  * - @TestCaseID: MethodGetDeclaredAnnotations
  *- @RequirementName: Java Reflection

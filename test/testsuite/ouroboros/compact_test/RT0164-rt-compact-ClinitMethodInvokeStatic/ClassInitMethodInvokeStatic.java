@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: ClassInitMethodInvokeStatic
  *- @RequirementName: Java Reflection

@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID:rc/unownedRef/RCWeakRefTest.java
  *- @TestCaseName:MyselfClassName

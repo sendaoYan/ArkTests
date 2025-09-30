@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: maple/runtime/rc/function/Ref_Processor_Cycle_Weak_Strong_Ref.java
  *- @TestCaseName:MyselfClassName

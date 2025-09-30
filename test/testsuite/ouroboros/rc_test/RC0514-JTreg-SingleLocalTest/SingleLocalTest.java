@@ -1,3 +1,4 @@
+/* @test */
 /*
  * -@TestCaseID: SingleLocalTest
  * -@TestCaseName: SingleLocalTest

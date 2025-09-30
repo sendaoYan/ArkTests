@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID:maple/runtime/rc/optimization/RC_Array_03.java
  *- @TestCaseName:MyselfClassName

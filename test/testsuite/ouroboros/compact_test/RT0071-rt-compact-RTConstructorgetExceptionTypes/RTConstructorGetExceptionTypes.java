@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: RTConstructorGetExceptionTypes
  *- @RequirementName: Java Reflection

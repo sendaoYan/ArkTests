@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: ReflectionGetMethod1
  *- @RequirementName: Java Reflection

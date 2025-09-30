@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: ReflectionToString
  *- @RequirementName: Java Reflection

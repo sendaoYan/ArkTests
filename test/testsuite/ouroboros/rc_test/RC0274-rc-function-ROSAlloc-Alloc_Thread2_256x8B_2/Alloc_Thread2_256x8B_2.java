@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID:Alloc_Thread2_256x8B_2
  *- @TestCaseName:MyselfClassName

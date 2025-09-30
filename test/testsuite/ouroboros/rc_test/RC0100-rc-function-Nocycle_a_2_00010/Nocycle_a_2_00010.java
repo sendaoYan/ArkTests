@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID:maple/runtime/rc/function/Nocycle_a_2_00010.java
  *- @TestCaseName:MyselfClassName

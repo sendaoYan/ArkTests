@@ -1,3 +1,4 @@
+/* @test */
 /*
  *- @TestCaseID: ClassInitFieldSetIntStatic
  *- @RequirementName: Java Reflection
