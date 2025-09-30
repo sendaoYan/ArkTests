@@ -23,11 +23,7 @@ public class MethodInvokeObjectObjectsTest {
 
     public static Class<?> clazz;
     public static void main(String[] args) {
-        try {
-            System.out.println(run());
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+        System.out.println(run());
     }
     /**
      * main test fun
