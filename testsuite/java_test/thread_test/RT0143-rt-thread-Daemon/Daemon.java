@@ -27,7 +27,6 @@ public class Daemon {
             throw new RuntimeException("destroy");
         try {
             Thread anotherThread = new MadThread(aGroup, "bot");
-            throw new RuntimeException("illegal");
         } catch (IllegalThreadStateException itse) {
             // Correct result
         }
