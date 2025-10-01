@@ -14,7 +14,7 @@
 */
 
 
-class ThreadTest {
+public class ThreadTest {
     public static void main(String[] args) {
         ThreadWaiting t = new ThreadWaiting(5000, 0);
         t.start();

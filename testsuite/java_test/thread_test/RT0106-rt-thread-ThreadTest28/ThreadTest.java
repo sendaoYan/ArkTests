@@ -14,7 +14,7 @@
 */
 
 
-class ThreadTest {
+public class ThreadTest {
     public static void main(String[] args) {
         ThreadSleeping t = new ThreadSleeping(10000, 0);
         t.start();

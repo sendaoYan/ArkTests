@@ -14,7 +14,7 @@
 */
 
 
-class ThreadTest {
+public class ThreadTest {
     public static void main(String[] args) {
         ThreadRunning threadRunning = new ThreadRunning();
         threadRunning.start();

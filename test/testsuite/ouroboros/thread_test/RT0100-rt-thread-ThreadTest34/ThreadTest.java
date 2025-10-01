@@ -28,7 +28,7 @@
  *- @ExecuteArgs:
  */
 
-class ThreadTest extends Thread {
+public class ThreadTest extends Thread {
     private String name;
 
     public ThreadTest(String name) {

@@ -28,7 +28,7 @@
  *- @ExecuteClass: ThreadTest
  *- @ExecuteArgs:
  */
-class ThreadTest {
+public class ThreadTest {
     private static final long waitDuration = 3000;
     private static long waitTime = 0;
 
