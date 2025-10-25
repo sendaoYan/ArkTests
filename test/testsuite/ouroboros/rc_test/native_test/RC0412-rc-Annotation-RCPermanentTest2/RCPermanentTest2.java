@@ -1,4 +1,3 @@
-/* @test */
 /*
  *- @TestCaseID:maple/runtime/rc/annotation/Permanent/RCPermanentTest2
  *- @TestCaseName:MyselfClassName
