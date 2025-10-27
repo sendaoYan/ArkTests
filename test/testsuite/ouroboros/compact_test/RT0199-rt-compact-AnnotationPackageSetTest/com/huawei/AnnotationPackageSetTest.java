@@ -1,4 +1,7 @@
-/* @test */
+/* @test
+ * @compile AnnoA.java AnnoB.java package-info.java AnnotationPackageSetTest.java
+ * @run main com.huawei.AnnotationPackageSetTest
+*/
 package com.huawei;
 
 import java.util.Arrays;
