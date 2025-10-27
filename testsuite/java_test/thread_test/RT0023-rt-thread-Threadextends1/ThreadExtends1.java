@@ -14,7 +14,7 @@
 */
 
 
-class ThreadExtends1 extends Thread {
+public class ThreadExtends1 extends Thread {
     private int ticket = 10;
     public static void main(String[] args) {
         ThreadExtends1 cls1 = new ThreadExtends1();

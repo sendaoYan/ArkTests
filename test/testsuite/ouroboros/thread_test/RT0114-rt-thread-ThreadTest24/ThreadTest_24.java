@@ -27,7 +27,7 @@
  *- @ExecuteArgs:
  */
 
-class ThreadTest_24 {
+public class ThreadTest_24 {
     /* Test for interrupt() -- Interrupt the current thread
      * If this thread is blocked in an invocation
      * of the wait(), wait(long), or wait(long, int) methods of the Object class, or
