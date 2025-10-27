@@ -22,7 +22,7 @@ import java.lang.ref.SoftReference;
 import java.util.ArrayList;
 
 public class FinalizerReferenceTest05 {
-    static SoftReference<ReferenceTest05> sr05;
+    static SoftReference<ReferenceTest05> sr05 = new SoftReference<ReferenceTest05>(new ReferenceTest05(10));
     static int check = 3;
 
     public static void main(String[] args) {
