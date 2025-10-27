@@ -38,7 +38,9 @@ public class ThreadStateyield extends Thread {
     }
 
     public static void main(String[] args) {
-        System.exit(run(args, System.out));
+        if(run(args, System.out) != 0) {
+            throw new RuntimeException("The test has failed");
+        }
     }
 
     public static int run(String[] args, PrintStream out) {
