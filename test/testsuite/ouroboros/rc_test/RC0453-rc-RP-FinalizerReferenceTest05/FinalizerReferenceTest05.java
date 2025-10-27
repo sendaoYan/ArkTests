@@ -1,5 +1,5 @@
 /* @test
- * run main/othervm -Xmx500M FinalizerReferenceTest05
+ * run main/othervm -Xmx100M FinalizerReferenceTest05
  */
 /*
  *- @TestCaseID: Maple_MemoryManagement2.0_FinalizerReferenceTest05
