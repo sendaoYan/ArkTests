@@ -21,7 +21,7 @@
 import java.lang.ref.WeakReference;
 
 public class FinalizerReferenceTest06 {
-    static WeakReference<ReferenceTest06> sr06;
+    static WeakReference<ReferenceTest06> sr06 = new WeakReference<>(new ReferenceTest06(10));
     static int check = 2;
 
     public static void main(String[] args) {
