@@ -1,4 +1,7 @@
-/* @test */
+/*
+ * @test
+ * @run main/othervm -Xmx500M OOMtest
+ */
 /*
  *- @TestCaseID:OOMtest.java
  *- @TestCaseName:MyselfClassName

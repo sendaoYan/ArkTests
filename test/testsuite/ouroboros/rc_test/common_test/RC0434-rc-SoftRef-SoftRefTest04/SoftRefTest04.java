@@ -1,4 +1,7 @@
-/* @test */
+/*
+ * @test
+ * @run main/othervm -Xmx500M SoftRefTest04
+ */
 /*
  * -@TestCaseID:SoftRefTest04.java
  * -@TestCaseName:MyselfClassName
@@ -42,7 +45,7 @@ public class SoftRefTest04 {
         int sum = 0;
         store = new ArrayList<byte[]>();
         byte[] temp;
-        for (int i = 1024 * 1024; i <= 1024 * 1024 * 10; ) {
+        for (int i = 1024; i <= 1024 * 1024 * 1024 * 10; ) {
             temp = new byte[i];
             store.add(temp);
             sum += store.size();
@@ -55,6 +58,7 @@ public class SoftRefTest04 {
         try {
             int Result = oomTest();
         } catch (OutOfMemoryError o) {
+            System.gc();
             // do nothing
         }
         if (rp.get() != null) {

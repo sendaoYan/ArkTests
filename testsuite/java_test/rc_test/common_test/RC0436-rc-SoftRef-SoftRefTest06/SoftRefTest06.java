@@ -1,4 +1,7 @@
-/* @test */
+/*
+ * @test
+ * @run main/othervm -Xmx500M SoftRefTest06
+ */
 /*
  * Copyright (c) [2021] Huawei Technologies Co.,Ltd.All rights reserved.
  *
@@ -36,7 +39,7 @@ public class SoftRefTest06 {
         int sum = 0;
         store = new ArrayList<byte[]>();
         byte[] temp;
-        for (int i = 1024 * 1024; i <= 1024 * 1024 * 10; ) {
+        for (int i = 1024; i <= 1024 * 1024 * 1024 * 10; ) {
             temp = new byte[i];
             store.add(temp);
             sum += store.size();

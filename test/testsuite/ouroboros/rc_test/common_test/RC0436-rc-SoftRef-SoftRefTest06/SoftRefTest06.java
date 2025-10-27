@@ -1,4 +1,7 @@
-/* @test */
+/*
+ * @test
+ * @run main/othervm -Xmx500M SoftRefTest06
+ */
 import java.lang.ref.Reference;
 import java.lang.ref.ReferenceQueue;
 import java.lang.ref.SoftReference;
@@ -43,7 +46,7 @@ public class SoftRefTest06 {
         int sum = 0;
         store = new ArrayList<byte[]>();
         byte[] temp;
-        for (int i = 1024 * 1024; i <= 1024 * 1024 * 10; ) {
+        for (int i = 1024; i <= 1024 * 1024 * 1024 * 10; ) {
             temp = new byte[i];
             store.add(temp);
             sum += store.size();

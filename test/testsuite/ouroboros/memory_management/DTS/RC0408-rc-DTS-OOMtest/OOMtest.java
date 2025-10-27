@@ -1,4 +1,7 @@
-/* @test */
+/*
+ * @test
+ * @run main/othervm -Xmx500M OOMtest
+ */
 /*
  * Copyright (c) [2020] Huawei Technologies Co.,Ltd.All rights reserved.
  *
