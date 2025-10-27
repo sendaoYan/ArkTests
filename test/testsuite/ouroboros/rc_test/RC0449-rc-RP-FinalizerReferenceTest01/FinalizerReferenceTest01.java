@@ -1,4 +1,6 @@
-/* @test */
+/* @test
+ * run main/othervm -Xmx100M FinalizerReferenceTest01
+ */
 /*
  *- @TestCaseID: Maple_MemoryManagement2.0_FinalizerReferenceTest01
  *- @TestCaseName: FinalizerReferenceTest01

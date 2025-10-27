@@ -1,4 +1,6 @@
-/* @test */
+/* @test
+ * run main/othervm -Xmx100M TriggerGCTest08
+ */
 /*
  *- @TestCaseID: Maple_MemoryManagement2.0_TriggerGCTest08
  *- @TestCaseName: TriggerGCTest08
