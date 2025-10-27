@@ -25,12 +25,12 @@ public class ThreadDMStopThrowable extends Thread {
             System.err.println(e1);
         }
         try {
-            thread_obj.stop(aaa);
+            thread_obj.stop();
+            throw new RuntimeException("Test failed");
         } catch (UnsupportedOperationException e2) {
             System.out.println(0);
             return;
         }
-        System.out.println(2);
     }
     public void run() {
         synchronized (this) {

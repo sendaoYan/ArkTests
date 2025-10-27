@@ -1,4 +1,6 @@
-/* @test */
+/* @test
+ * @run main/othervm -Xmx100M ThreadOutOfMemoryTest
+ */
 /*
  * Copyright (c) [2020] Huawei Technologies Co.,Ltd.All rights reserved.
  *
@@ -31,7 +33,7 @@ import java.io.PrintStream;
 public class ThreadOutOfMemoryTest {
     private static Object s = new Object();
     private static int count = 0;
-    private static int i = 0;
+    private static volatile int i = 0;
 
     public static void main(String[] args) {
         System.exit(run(args, System.out));
@@ -39,7 +41,7 @@ public class ThreadOutOfMemoryTest {
     }
 
     public static int run(String[] args, PrintStream out) {
-        for (; ; ) {
+        for (;;) {
             new Thread(new Runnable() {
                 public void run() {
                     synchronized (s) {
@@ -52,9 +54,8 @@ public class ThreadOutOfMemoryTest {
                             System.err.println(e2);
                         }
                         count += 1;
-//                        System.out.println("New thread #" + count);
                     }
-                    for (; ; ) {
+                    for (;;) {
                         try {
                             Thread.sleep(1000);
                         } catch (InterruptedException e1) {
@@ -67,7 +68,6 @@ public class ThreadOutOfMemoryTest {
                 }
             }).start();
             if (i != 0) {
-//                System.out.println(i);
                 break;
             }
         }
