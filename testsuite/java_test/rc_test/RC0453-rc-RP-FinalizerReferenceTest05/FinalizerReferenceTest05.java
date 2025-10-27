@@ -1,5 +1,5 @@
 /* @test
- * @run main/othervm -Xmx500M FinalizerReferenceTest05
+ * @run main/othervm -Xmx100M FinalizerReferenceTest05
 */
 /*
  * Copyright (c) [2021] Huawei Technologies Co.,Ltd.All rights reserved.
