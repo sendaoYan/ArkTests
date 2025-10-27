@@ -38,7 +38,7 @@ public class ThreadLocalRemoveTest {
                     try {
                         n.set(threadId); // Sets threadId as threadLocal value...
                         for (int j = 0; j < threadId; j++) {
-                            yield();
+                            Thread.yield();
                         }
                         // To remove the ThreadLocal ....
                         for (int removeId : removeNode) {

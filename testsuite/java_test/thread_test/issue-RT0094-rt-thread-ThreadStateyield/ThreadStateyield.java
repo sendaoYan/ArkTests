@@ -46,7 +46,7 @@ public class ThreadStateyield extends Thread {
     public void run() {
         for (; ; ) {
             if (currentThread().getName().equals("zqp1")) {
-                yield();
+                Thread.yield();
                 i++;
                 try {
                     sleep(5000);

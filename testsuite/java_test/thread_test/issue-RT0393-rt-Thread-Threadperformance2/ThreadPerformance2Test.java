@@ -26,7 +26,7 @@ public class ThreadPerformance2Test extends Thread {
             for (int i = 0; i < tt.length; i++) {
                 tt[i] = new Thread() {
                     public void run() {
-                        yield();
+                        Thread.yield();
                         try {
                             sleep(0);
                         }catch (InterruptedException e) {

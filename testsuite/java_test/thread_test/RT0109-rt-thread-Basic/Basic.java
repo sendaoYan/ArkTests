@@ -32,7 +32,7 @@ public class Basic {
                     int threadId = ((Integer) (n.get())).intValue();
                     for (int j = 0; j < threadId; j++) {
                         x[threadId]++;
-                        yield();
+                        Thread.yield();
                     }
                 }
             };

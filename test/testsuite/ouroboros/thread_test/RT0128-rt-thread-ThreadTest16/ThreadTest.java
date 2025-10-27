@@ -34,7 +34,7 @@
 class MyThread extends Thread {
     public void run() {
         while (!isInterrupted()) {
-            yield();
+            Thread.yield();
         }
         System.out.println(isInterrupted());
         System.out.println(interrupted());
