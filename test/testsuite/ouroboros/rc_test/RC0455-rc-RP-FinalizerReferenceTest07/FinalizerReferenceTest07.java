@@ -23,7 +23,7 @@ import java.lang.ref.ReferenceQueue;
 
 public class FinalizerReferenceTest07 {
     static ReferenceQueue referenceQueue = new ReferenceQueue();
-    static PhantomReference<ReferenceTest07> sr07;
+    static PhantomReference<ReferenceTest07> sr07 = new PhantomReference<>(null, referenceQueue);
     static int check = 2;
 
     public static void main(String[] args) {
