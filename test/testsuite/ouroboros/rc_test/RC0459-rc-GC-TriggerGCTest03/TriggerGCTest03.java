@@ -1,4 +1,6 @@
-/* @test */
+/* @test
+ * run main/othervm -Xmx100M TriggerGCTest03
+ */
 /*
  *- @TestCaseID: Maple_MemoryManagement2.0_TriggerGCTest03
  *- @TestCaseName: TriggerGCTest03
@@ -50,7 +52,7 @@ public class TriggerGCTest03 {
         ArrayList<byte[]> store = new ArrayList<byte[]>();
         byte[] temp;
 
-        for (int i = 1034 * 1034; i <= 1034 * 1034 * 10; ) {
+        for (int i = 1024 * 1024; i <= 1024 * 1024 * 10; ) {
             temp = new byte[i];
             store.add(temp);
             sum += store.size();
