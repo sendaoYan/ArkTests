@@ -22,7 +22,7 @@ public class ThreadPerformance3Test extends Thread {
         long sum = 0;
         long ave;
         long[] ThreadPerformance3Test = new long[20];
-        Thread[] tt = new Thread[5000];
+        Thread[] tt = new Thread[5];
         for (int ii = 0; ii < ThreadPerformance3Test.length; ii++) {
             for (int i = 0; i < tt.length; i++) {
                 tt[i] = new Thread() {
