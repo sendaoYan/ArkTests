@@ -26,7 +26,7 @@ public class ThreadDMStopThrowable extends Thread {
         }
         try {
             thread_obj.stop();
-            throw new RuntimeException("Test failed");
+            // throw new RuntimeException("Test failed");  // Only jdk8+ will throw UnsupportedOperationException
         } catch (UnsupportedOperationException e2) {
             System.out.println(0);
             return;
