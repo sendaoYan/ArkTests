@@ -53,7 +53,7 @@ public class RC_Array_11 {
         if(strr1.length == 4 && strr2.length == 3 && strr3.length == 2)
             intCheckCount();
         else
-            System.out.println("ErrorResult in check: " + test_method);
+            throw new RuntimeException("ErrorResult in check: " + test_method);
     }
     public String  run(String argv[],PrintStream out) throws InterruptedException {
         String result = "Error"; /*STATUS_FAILED*/
@@ -119,7 +119,7 @@ public class RC_Array_11 {
             if(tmp_String1[3] == "'a''r''r''a''y'" && tmp_String2[2][0] == "'2''6'" && tmp_String3[1][2][0]== "'2''6'")
                     intCheckCount();
             else
-                System.out.println("ErrorResult in test01");
+                throw new RuntimeException("ErrorResult in test01");
         }
         public void run()
         {
@@ -139,7 +139,7 @@ public class RC_Array_11 {
             if(tmp_String1[3] == "'a''r''r''a''y'" && tmp_String2[2][0] == "'2''6'" && tmp_String3[1][2][0]== "'2''6'")
                 intCheckCount();
             else
-                System.out.println("ErrorResult in test02");
+                throw new RuntimeException("ErrorResult in test02");
         }
         public void run()
         {
@@ -157,7 +157,7 @@ public class RC_Array_11 {
             if(tmp_String1[3] == "'a''r''r''a''y'" && tmp_String2[2][0] == "'2''6'" && tmp_String3[1][2][0]== "'2''6'")
                 intCheckCount();
             else
-                System.out.println("ErrorResult in test03");
+                throw new RuntimeException("ErrorResult in test03");
         }
         public void run()
         {
@@ -175,7 +175,7 @@ public class RC_Array_11 {
             if(tmp_String1[3] == "'a''r''r''a''y'" && tmp_String2[2][0] == "'2''6'" && tmp_String3[1][2][0]== "'2''6'")
                 intCheckCount();
             else
-                System.out.println("ErrorResult in test04");
+                throw new RuntimeException("ErrorResult in test04");
         }
         public void run()
         {
@@ -193,7 +193,7 @@ public class RC_Array_11 {
             if(tmp_String1[3] == "'a''r''r''a''y'" && tmp_String2[2][0] == "'2''6'" && tmp_String3[1][2][0]== "'2''6'")
                 intCheckCount();
             else
-                System.out.println("ErrorResult in test05");
+                throw new RuntimeException("ErrorResult in test05");
         }
         public void run()
         {
@@ -212,12 +212,12 @@ public class RC_Array_11 {
             if(tmp_String1[3] == "'h''a''l''l''y'" && tmp_String2[2][0] == "'2''7'" && tmp_String3[1][2][0] == "'2''7'")
                 intCheckCount();
             else
-                System.out.println("ErrorResult in test06 step1");
+                throw new RuntimeException("ErrorResult in test06 step1");
             //Check unmodified parameter values
             if(arr_str1[3]== "'a''r''r''a''y'" && arr_str2[2][0] == "'2''6'" && arr_str3[1][2][0] == "'2''6'")
                 intCheckCount();
             else
-                System.out.println("ErrorResult in test06 step2");
+                throw new RuntimeException("ErrorResult in test06 step2");
         }
         public void run()
         {
@@ -242,12 +242,12 @@ public class RC_Array_11 {
             if(strr1[3] == "'h''a''l''l''y'" && strr2[2][0] == "'2''7'" && strr3[1][2][0] == "'2''7'")
                 intCheckCount();
             else
-                System.out.println("ErrorResult in test07 step1");
+                throw new RuntimeException("ErrorResult in test07 step1");
             //Check the modified parameter values
             if(arr_str1[3]== "'h''a''l''l''y'" && arr_str2[2][0] == "'2''7'" && arr_str3[1][2][0] == "'2''7'")
                 intCheckCount();
             else
-                System.out.println("ErrorResult in test07 step2");
+                throw new RuntimeException("ErrorResult in test07 step2");
         }
         public void run()
         {
@@ -269,12 +269,12 @@ public class RC_Array_11 {
             if(VALUE1[3] == "'h''a''l''l''y'" && VALUE2[2][0] == "'2''7'" && VALUE3[1][2][0] == "'2''7'")
                 intCheckCount();
             else
-                System.out.println("ErrorResult in test08 step1");
+                throw new RuntimeException("ErrorResult in test08 step1");
             //Check the modified parameter values
             if(rctest.str_base1[3]== "'h''a''l''l''y'" && rctest.str_base2[2][0] == "'2''7'" && rctest.str_base3[1][2][0] == "'2''7'")
                 intCheckCount();
             else
-                System.out.println("ErrorResult in test08 step2");
+                throw new RuntimeException("ErrorResult in test08 step2");
         }
         public void run()
         {
@@ -292,7 +292,7 @@ public class RC_Array_11 {
             if(value1.length == 4 && value2.length == 3  && value3.length == 2)
                 check++;
             else
-                System.out.println("ErrorResult in test09——2");
+                throw new RuntimeException("ErrorResult in test09——2");
             //ArrayIndexOutOfBoundsException
             try {
                 value1[5] = "error";
@@ -313,7 +313,7 @@ public class RC_Array_11 {
             if(value1.length == 4 && value2.length == 3  && value3.length == 2)
                 check++;
             else
-                System.out.println("ErrorResult in test09——2");
+                throw new RuntimeException("ErrorResult in test09——2");
             //NullPointerException
             value1 = null;
             value2 = null;

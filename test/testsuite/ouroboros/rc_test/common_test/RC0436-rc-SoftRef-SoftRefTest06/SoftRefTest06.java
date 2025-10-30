@@ -37,7 +37,7 @@ public class SoftRefTest06 {
     public static void objectDeadNormally() {
         Reference sr = new SoftReference<SoftRefTest06>(new SoftRefTest06(), rq);
         if (sr.get() == null) {
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
         }
         // sr will die now.
     }

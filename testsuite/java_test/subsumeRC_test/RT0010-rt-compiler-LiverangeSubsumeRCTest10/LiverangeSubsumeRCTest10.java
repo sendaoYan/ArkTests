@@ -56,7 +56,7 @@ public class LiverangeSubsumeRCTest10 {
         if (onlyUseInsideLoop()) {
             System.out.println("ExpectResult");
         } else {
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
         }
     }
     public void defInsideAndUseOutsideLoop() {

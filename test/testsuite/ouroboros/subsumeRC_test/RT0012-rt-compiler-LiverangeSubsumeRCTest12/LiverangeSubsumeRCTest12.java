@@ -84,7 +84,7 @@ public class LiverangeSubsumeRCTest12 {
         if (defAndUseInsideLoop().className.equals("NoOptimization")) {
             System.out.println("ExpectResult");
         } else {
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
         }
     }
 }

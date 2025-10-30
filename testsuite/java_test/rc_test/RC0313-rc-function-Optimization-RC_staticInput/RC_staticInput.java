@@ -20,12 +20,12 @@ public class RC_staticInput {
         if(test.length==4)
             System.out.println("ExpectResult");
         else
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
         test(4,test);
         if(test.length==4)
             System.out.println("ExpectResult");
         else
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
     }
     public static void test(int first, int[] second) {
         int [] xyz = {23,24,25,26};
@@ -33,6 +33,6 @@ public class RC_staticInput {
         if(second.length==4)
             System.out.println("ExpectResult");
         else
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
     }
 }

@@ -35,8 +35,7 @@ public class FrequentGCTest01 {
                 a++;
             }
             if (a != 100) {
-                System.out.println("ErrorResult");
-                return;
+                throw new RuntimeException("ErrorResult");
             }
         }
         System.out.println("ExpectResult");

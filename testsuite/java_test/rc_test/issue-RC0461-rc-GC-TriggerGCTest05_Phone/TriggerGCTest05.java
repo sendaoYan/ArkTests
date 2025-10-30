@@ -48,7 +48,7 @@ public class TriggerGCTest05 {
         if (check == 0) {
             System.out.println("ExpectResult");
         } else {
-            System.out.println("ErrorResult, check should be 0, but now check = " + check);
+            throw new RuntimeException("ErrorResult, check should be 0, but now check = " + check);
         }
     }
     private static int oomTest() {

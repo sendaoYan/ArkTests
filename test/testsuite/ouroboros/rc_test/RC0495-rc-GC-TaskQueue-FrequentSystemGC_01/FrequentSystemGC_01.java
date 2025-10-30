@@ -72,7 +72,7 @@ public class FrequentSystemGC_01 {
         if (FrequentSystemGC_01.totalResult == true) {
             System.out.println("ExpectResult");
         } else {
-            System.out.println("ErrorResult, weak is not freed after system.gc() in some thread!");
+            throw new RuntimeException("ErrorResult, weak is not freed after system.gc() in some thread!");
         }
     }
 }

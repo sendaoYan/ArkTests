@@ -112,7 +112,7 @@ public class CB_06 {
             if (result == 200918)
                 System.out.println("ExpectResult");
         } catch (NullPointerException n) {
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
         }
     }
     public static void main(String[] args) {

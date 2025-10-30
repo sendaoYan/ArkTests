@@ -51,7 +51,7 @@ public class RC_Array_12 {
         if(objr1.length == 4 && objr2.length == 3 && objr3.length == 2)
             incCheckCount();
         else
-            System.out.println("ErrorResult in check: " + test_method);
+            throw new RuntimeException("ErrorResult in check: " + test_method);
     }
     public String  run(String argv[],PrintStream out) throws InterruptedException {
         String result = "Error"; /*STATUS_FAILED*/
@@ -117,7 +117,7 @@ public class RC_Array_12 {
             if(tmp_obj1[3] == (Object)'d' && tmp_obj2[2][0] == (Object)'g' && tmp_obj3[1][2][0] == (Object)'n')
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test01");
+                throw new RuntimeException("ErrorResult in test01");
         }
         public void run()
         {
@@ -137,7 +137,7 @@ public class RC_Array_12 {
             if(tmp_obj1[3] == (Object)'d' && tmp_obj2[2][0] == (Object)'g' && tmp_obj3[1][2][0] == (Object)'n')
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test02");
+                throw new RuntimeException("ErrorResult in test02");
         }
         public void run()
         {
@@ -155,7 +155,7 @@ public class RC_Array_12 {
             if(tmp_obj1[3] == (Object)'d' && tmp_obj2[2][0] == (Object)'g' && tmp_obj3[1][2][0] == (Object)'n')
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test03");
+                throw new RuntimeException("ErrorResult in test03");
         }
         public void run()
         {
@@ -173,7 +173,7 @@ public class RC_Array_12 {
             if(tmp_obj1[3] == (Object)'d' && tmp_obj2[2][0] == (Object)'g' && tmp_obj3[1][2][0] == (Object)'n')
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test04");
+                throw new RuntimeException("ErrorResult in test04");
         }
         public void run()
         {
@@ -191,7 +191,7 @@ public class RC_Array_12 {
             if(tmp_obj1[3] == (Object)'d' && tmp_obj2[2][0] == (Object)'g' && tmp_obj3[1][2][0] == (Object)'n')
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test05");
+                throw new RuntimeException("ErrorResult in test05");
         }
         public void run()
         {
@@ -209,12 +209,12 @@ public class RC_Array_12 {
             if(tmp_obj1[3] == (Object)'g' && tmp_obj2[2][0] == (Object)'s' && tmp_obj3[1][2][0] == (Object)'a')
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test06 step1");
+                throw new RuntimeException("ErrorResult in test06 step1");
             //Check unmodified parameter values
             if(arr_obj1[3] == (Object)'d' && arr_obj2[2][0] == (Object)'g'  && arr_obj3[1][2][0] == (Object)'n')
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test06 step2");
+                throw new RuntimeException("ErrorResult in test06 step2");
         }
         public void run()
         {
@@ -238,12 +238,12 @@ public class RC_Array_12 {
             if(objr1[3] == (Object)'g' && objr2[2][0] == (Object)'s' && objr3[1][2][0] == (Object)'a')
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test07 step1");
+                throw new RuntimeException("ErrorResult in test07 step1");
             //Check the modified parameter values
             if(arr_obj1[3] == (Object)'g' && arr_obj2[2][0] == (Object)'s'  && arr_obj3[1][2][0] == (Object)'a')
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test07 step2");
+                throw new RuntimeException("ErrorResult in test07 step2");
         }
         public void run()
         {
@@ -265,12 +265,12 @@ public class RC_Array_12 {
             if(VALUE4[3] == (Object)'g' && VALUE5[2][0] == (Object)'s' && VALUE6[1][2][0] == (Object)'a')
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test08 step1");
+                throw new RuntimeException("ErrorResult in test08 step1");
             //Check the modified parameter values
             if(rctest.obj_base1[3] == (Object)'g' && rctest.obj_base2[2][0] == (Object)'s'  && rctest.obj_base3[1][2][0] == (Object)'a')
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test08 step2");
+                throw new RuntimeException("ErrorResult in test08 step2");
         }
         public void run()
         {
@@ -288,7 +288,7 @@ public class RC_Array_12 {
             if(value1.length == 4 && value2.length == 3  && value3.length == 2)
                 check++;
             else
-                System.out.println("ErrorResult in test09——2");
+                throw new RuntimeException("ErrorResult in test09——2");
             //ArrayIndexOutOfBoundsException
             try {
                 value1[5] = "error";
@@ -309,7 +309,7 @@ public class RC_Array_12 {
             if(value1.length == 4 && value2.length == 3  && value3.length == 2)
                 check++;
             else
-                System.out.println("ErrorResult in test09——2");
+                throw new RuntimeException("ErrorResult in test09——2");
             //NullPointerException
             value1 = null;
             value2 = null;

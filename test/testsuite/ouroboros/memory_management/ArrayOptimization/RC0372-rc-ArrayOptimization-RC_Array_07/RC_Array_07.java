@@ -86,7 +86,7 @@ public class RC_Array_07 extends Base_007 {
                 && arr1.length == 4 && arr2.length == 3 && arr3.length == 2)
             check_count++;
         else
-            System.out.println("ErrorResult long step1");
+            throw new RuntimeException("ErrorResult long step1");
 
         //test01 interface call, internal initialization array, do not modify the parameter value, only judge
         test01(4, TEST1, TEST2, TEST3);
@@ -96,7 +96,7 @@ public class RC_Array_07 extends Base_007 {
                 && arr1.length == 4 && arr2.length == 3 && arr3.length == 2)
             check_count++;
         else
-            System.out.println("ErrorResult in step2");
+            throw new RuntimeException("ErrorResult in step2");
 
         //test02 interface call, call function change to modify the parameter value and judge
         test02(4, TEST1, TEST2, TEST3);
@@ -105,7 +105,7 @@ public class RC_Array_07 extends Base_007 {
                 && arr1.length == 4 && arr2.length == 3 && arr3.length == 2)
             check_count++;
         else
-            System.out.println("ErrorResult in step3");
+            throw new RuntimeException("ErrorResult in step3");
 
         //The test03 interface call, call the RC_Array_07_test01 function return value to the parameter third and judged.
         //RC_Array_07_test01,return 2D array，Call the multi-parameter constructor of RC_Array_01, and assign a value to
@@ -115,7 +115,7 @@ public class RC_Array_07 extends Base_007 {
         if (TEST2.length == 3 && arr2.length == 3)
             check_count++;
         else
-            System.out.println("ErrorResult in step4");
+            throw new RuntimeException("ErrorResult in step4");
 
         //The calling function returns a constant value as the assignment of the constant of this function.
         //Call RC_Array_07() no argument construction method, initialize the variable of the parent class, and assign
@@ -130,7 +130,7 @@ public class RC_Array_07 extends Base_007 {
         if (getarr1.length == 4 && getarr2.length == 3 && getarr3.length == 2)
             check_count++;
         else
-            System.out.println("ErrorResult in step5");
+            throw new RuntimeException("ErrorResult in step5");
 
         //Exception testing
         boolean ret = RC_Array_Exception();
@@ -154,7 +154,7 @@ public class RC_Array_07 extends Base_007 {
                 && xyz.length == 4 && xyz2.length == 3 && xyz3.length == 2)
             check_count++;
         else
-            System.out.println("ErrorResult in test01");
+            throw new RuntimeException("ErrorResult in test01");
     }
 
     private static Object change(Object temp1, Object temp2) {
@@ -173,7 +173,7 @@ public class RC_Array_07 extends Base_007 {
         if (second.length == 4 && third.length == 3 && four.length == 2)
             check_count++;
         else
-            System.out.println("ErrorResult in test02");
+            throw new RuntimeException("ErrorResult in test02");
     }
 
     private static void test03(long[][] third) {
@@ -183,7 +183,7 @@ public class RC_Array_07 extends Base_007 {
         if (third.length == 3)
             check_count++;
         else
-            System.out.println("ErrorResult in test03");
+            throw new RuntimeException("ErrorResult in test03");
     }
 
     private static long[] RC_Array_get01() {
@@ -213,7 +213,7 @@ public class RC_Array_07 extends Base_007 {
         if (rctest.base1.length == 4)
             check_count++;
         else
-            System.out.println("ErrorResult in RC_Array_set01");
+            throw new RuntimeException("ErrorResult in RC_Array_set01");
         return rctest.base1;
     }
 
@@ -229,7 +229,7 @@ public class RC_Array_07 extends Base_007 {
         if (rctest.base2.length == 3)
             check_count++;
         else
-            System.out.println("ErrorResult in RC_Array_set02");
+            throw new RuntimeException("ErrorResult in RC_Array_set02");
         return rctest.base2;
     }
 
@@ -245,7 +245,7 @@ public class RC_Array_07 extends Base_007 {
         if (rctest.base3.length == 2)
             check_count++;
         else
-            System.out.println("ErrorResult in RC_Array_set03");
+            throw new RuntimeException("ErrorResult in RC_Array_set03");
         return rctest.base3;
     }
 
@@ -266,7 +266,7 @@ public class RC_Array_07 extends Base_007 {
         if (rctest.base1.length == 4 && rctest.base2.length == 3 && rctest.base21.length == 3 && rctest.base3.length == 2)
             check_count++;
         else
-            System.out.println("ErrorResult in RC_Array_07_test01");
+            throw new RuntimeException("ErrorResult in RC_Array_07_test01");
         return rctest.base21;
     }
 
@@ -296,7 +296,7 @@ public class RC_Array_07 extends Base_007 {
         if (rctest.base1.length == 4 && rctest.base2.length == 3 && rctest.base21.length == 3 && rctest.base3.length == 2)
             check_count++;
         else
-            System.out.println("ErrorResult in RC_Array_07_test02");
+            throw new RuntimeException("ErrorResult in RC_Array_07_test02");
         rctest.base1 = VALUE1;
         rctest.base2 = VALUE2;
         rctest.base21 = VALUE2;
@@ -304,7 +304,7 @@ public class RC_Array_07 extends Base_007 {
         if (rctest.base1.length == 4 && rctest.base2.length == 3 && rctest.base21.length == 3 && rctest.base3.length == 2)
             check_count++;
         else
-            System.out.println("ErrorResult in RC_Array_07_test02_2");
+            throw new RuntimeException("ErrorResult in RC_Array_07_test02_2");
         return VALUE2;
     }
 
@@ -319,7 +319,7 @@ public class RC_Array_07 extends Base_007 {
         if (value1.length == 4 && value2.length == 3 && value3.length == 2)
             check++;
         else
-            System.out.println("ErrorResult in RC_Array_Exception——1");
+            throw new RuntimeException("ErrorResult in RC_Array_Exception——1");
 
         //ArrayIndexOutOfBoundsException
         try {
@@ -397,7 +397,7 @@ public class RC_Array_07 extends Base_007 {
         if (value1.length == 4 && value2.length == 3 && value3.length == 2)
             check++;
         else
-            System.out.println("ErrorResult in RC_Array_Exception——2");
+            throw new RuntimeException("ErrorResult in RC_Array_Exception——2");
 
         //NullPointerException
         value1 = null;

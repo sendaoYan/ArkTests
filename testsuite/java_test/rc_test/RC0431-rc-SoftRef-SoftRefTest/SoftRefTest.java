@@ -43,7 +43,7 @@ public class SoftRefTest {
         if (a == 100) {
             System.out.println("ExpectResult");
         } else {
-            System.out.println("ErrorResult finally");
+            throw new RuntimeException("ErrorResult finally");
         }
     }
     static class TriggerRP implements Runnable {

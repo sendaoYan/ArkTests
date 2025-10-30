@@ -19,7 +19,7 @@ public class ArrayCopyTest {
         if (functionTest01() && functionTest02() && functionTest03() && functionTest04()) {
             System.out.println("ExpectResult");
         } else {
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
         }
     }
     private static boolean functionTest01() {

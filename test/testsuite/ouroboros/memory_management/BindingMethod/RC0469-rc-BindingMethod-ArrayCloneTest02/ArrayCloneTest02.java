@@ -51,7 +51,7 @@ public class ArrayCloneTest02 {
         try {
             ArrayCloneTest02 cloneTest = new ArrayCloneTest02(1);
             ArrayCloneTest02 cloneTest1 = (ArrayCloneTest02) cloneTest.clone();
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
         } catch (CloneNotSupportedException e) {
             System.out.println("ExpectResult");
         }

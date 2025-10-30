@@ -144,7 +144,7 @@ public class CB_Thread_02 {
                 System.out.println("ExpectResult");
             }
         } catch (NullPointerException n) {
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
         }
     }
 }

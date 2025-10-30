@@ -411,7 +411,7 @@ public class CB_Thread_01 {
                 System.out.println("ExpectResult");
             }
         } catch (NullPointerException n) {
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
         }
     }
 }

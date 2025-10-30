@@ -45,7 +45,7 @@ public class GCOnly_WeakRefTest05 {
         if (checkCount == 0) {
             System.out.println("ExpectResult");
         } else {
-            System.out.println("ErrorResult checkCount : " + checkCount);
+            throw new RuntimeException("ErrorResult checkCount : " + checkCount);
         }
     }
 
@@ -97,19 +97,19 @@ public class GCOnly_WeakRefTest05 {
         while ((wrqPoll = wrq.poll()) != null) {
             if (!wrqPoll.getClass().toString().equals("class java.lang.ref.WeakReference")) {
                 checkCount++;
-                System.out.println("ErrorResult in wrq.poll()");
+                throw new RuntimeException("ErrorResult in wrq.poll()");
             }
         }
         while ((srqPoll = srq.poll()) != null) {
             if (!srqPoll.getClass().toString().equals("class java.lang.ref.WeakReference")) {
                 checkCount++;
-                System.out.println("ErrorResult in srq.poll()");
+                throw new RuntimeException("ErrorResult in srq.poll()");
             }
         }
         while ((prqPoll = prq.poll()) != null) {
             if (!prqPoll.getClass().toString().equals("class java.lang.ref.PhantomReference")) {
                 checkCount++;
-                System.out.println("ErrorResult in prq.poll()");
+                throw new RuntimeException("ErrorResult in prq.poll()");
             }
         }
     }

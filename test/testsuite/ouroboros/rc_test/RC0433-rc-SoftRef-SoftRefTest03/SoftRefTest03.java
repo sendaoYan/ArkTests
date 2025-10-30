@@ -57,7 +57,7 @@ public class SoftRefTest03 {
         if (a == 100) {
             System.out.println("ExpectResult");
         } else {
-            System.out.println("ErrorResult finally");
+            throw new RuntimeException("ErrorResult finally");
         }
 
     }

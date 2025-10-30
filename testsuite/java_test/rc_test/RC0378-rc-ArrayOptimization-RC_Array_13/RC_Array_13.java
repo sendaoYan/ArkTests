@@ -51,7 +51,7 @@ public class RC_Array_13 {
         if(boolr1.length == 4 && boolr2.length == 3 && boolr3.length == 2)
             incCheckCount();
         else
-            System.out.println("ErrorResult in check: " + test_method);
+            throw new RuntimeException("ErrorResult in check: " + test_method);
     }
     public String  run(String argv[],PrintStream out) throws InterruptedException {
         String result = "Error"; /*STATUS_FAILED*/
@@ -118,7 +118,7 @@ public class RC_Array_13 {
                     incCheckCount();
             }
             else
-                System.out.println("ErrorResult in test01");
+                throw new RuntimeException("ErrorResult in test01");
         }
         public void run()
         {
@@ -138,7 +138,7 @@ public class RC_Array_13 {
             if(tmp_boolean1[3] == true && tmp_boolean2[2][0] == true && tmp_boolean3[1][2][0] == false)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test02");
+                throw new RuntimeException("ErrorResult in test02");
         }
         public void run()
         {
@@ -156,7 +156,7 @@ public class RC_Array_13 {
             if(tmp_boolean1[3] == true && tmp_boolean2[2][0] == true && tmp_boolean3[1][2][0] == false)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test03");
+                throw new RuntimeException("ErrorResult in test03");
         }
         public void run()
         {
@@ -174,7 +174,7 @@ public class RC_Array_13 {
             if(tmp_boolean1[3] == true && tmp_boolean2[2][0] == true && tmp_boolean3[1][2][0] == false)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test04");
+                throw new RuntimeException("ErrorResult in test04");
         }
         public void run()
         {
@@ -192,7 +192,7 @@ public class RC_Array_13 {
             if(tmp_boolean1[3] == true && tmp_boolean2[2][0] == true && tmp_boolean3[1][2][0] == false)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test05");
+                throw new RuntimeException("ErrorResult in test05");
         }
         public void run()
         {
@@ -210,12 +210,12 @@ public class RC_Array_13 {
             if(tmp_boolean1[3] == false && tmp_boolean2[2][0] == false && tmp_boolean3[1][2][0] == true)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test06 step1");
+                throw new RuntimeException("ErrorResult in test06 step1");
             //Check unmodified parameter values
             if(arr_bool1[3] == true && arr_bool2[2][0] == true && arr_bool3[1][2][0] == false)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test06 step2");
+                throw new RuntimeException("ErrorResult in test06 step2");
         }
         public void run()
         {
@@ -239,12 +239,12 @@ public class RC_Array_13 {
             if(boolr1[3] == false && boolr2[2][0] == false && boolr3[1][2][0] == true)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test07 step1");
+                throw new RuntimeException("ErrorResult in test07 step1");
             //Check the modified parameter values
             if(arr_bool1[3] == false && arr_bool2[2][0] == false && arr_bool3[1][2][0] == true)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test07 step2");
+                throw new RuntimeException("ErrorResult in test07 step2");
         }
         public void run()
         {
@@ -266,12 +266,12 @@ public class RC_Array_13 {
             if(VALUE7[3] == false && VALUE8[2][0] == false && VALUE9[1][2][0] == true)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test08 step1");
+                throw new RuntimeException("ErrorResult in test08 step1");
             //Check the modified parameter values
             if(rctest.bool_base1[3] == false && rctest.bool_base2[2][0] == false && rctest.bool_base3[1][2][0] == true)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test08 step2");
+                throw new RuntimeException("ErrorResult in test08 step2");
         }
         public void run()
         {
@@ -289,7 +289,7 @@ public class RC_Array_13 {
             if(value1.length == 4 && value2.length == 3  && value3.length == 2)
                 check++;
             else
-                System.out.println("ErrorResult in test09——2");
+                throw new RuntimeException("ErrorResult in test09——2");
             //ArrayIndexOutOfBoundsException
             try {
                 value1[5] = true;
@@ -321,7 +321,7 @@ public class RC_Array_13 {
             if(value1.length == 4 && value2.length == 3  && value3.length == 2)
                 check++;
             else
-                System.out.println("ErrorResult in test09——2");
+                throw new RuntimeException("ErrorResult in test09——2");
             //NullPointerException
             value1 = null;
             value2 = null;

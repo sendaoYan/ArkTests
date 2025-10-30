@@ -64,7 +64,7 @@ public class RC_Array_14 {
         if(doubler1.length == 4 && doubler2.length == 3 && doubler3.length == 2)
             incCheckCount();
         else
-            System.out.println("ErrorResult in check: " + test_method);
+            throw new RuntimeException("ErrorResult in check: " + test_method);
     }
 
     public String  run(String argv[],PrintStream out) throws InterruptedException {
@@ -134,7 +134,7 @@ public class RC_Array_14 {
             if(tmp_double1[3] == (double) 4.4f && tmp_double2[2][0] == (double)7.7f && tmp_double3[1][2][0] == (double)10.3f)
                     incCheckCount();
             else
-                System.out.println("ErrorResult in test01");
+                throw new RuntimeException("ErrorResult in test01");
         }
         public void run()
         {
@@ -155,7 +155,7 @@ public class RC_Array_14 {
             if(tmp_double1[3] == (double) 4.4f && tmp_double2[2][0] == (double)7.7f && tmp_double3[1][2][0] == (double)10.3f)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test02");
+                throw new RuntimeException("ErrorResult in test02");
         }
         public void run()
         {
@@ -174,7 +174,7 @@ public class RC_Array_14 {
             if(tmp_double1[3] == (double) 4.4f && tmp_double2[2][0] == (double)7.7f && tmp_double3[1][2][0] == (double)10.3f)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test03");
+                throw new RuntimeException("ErrorResult in test03");
         }
         public void run()
         {
@@ -193,7 +193,7 @@ public class RC_Array_14 {
             if(tmp_double1[3] == (double) 4.4f && tmp_double2[2][0] == (double)7.7f && tmp_double3[1][2][0] == (double)10.3f)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test04");
+                throw new RuntimeException("ErrorResult in test04");
         }
         public void run()
         {
@@ -212,7 +212,7 @@ public class RC_Array_14 {
             if(tmp_double1[3] == (double) 4.4f && tmp_double2[2][0] == (double)7.7f && tmp_double3[1][2][0] == (double)10.3f)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test05");
+                throw new RuntimeException("ErrorResult in test05");
         }
         public void run()
         {
@@ -231,12 +231,12 @@ public class RC_Array_14 {
             if(tmp_double1[3] == 4.8f && tmp_double2[2][0] == 2.7f && tmp_double3[1][2][0] == 10.9f)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test06 step1");
+                throw new RuntimeException("ErrorResult in test06 step1");
             //Check unmodified parameter values
             if(arr_dou1[3] == 4.4f && arr_dou2[2][0] == 7.7f && arr_dou3[1][2][0] == 10.3f)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test06 step2");
+                throw new RuntimeException("ErrorResult in test06 step2");
         }
         public void run()
         {
@@ -262,12 +262,12 @@ public class RC_Array_14 {
             if(doubler1[3] == 4.8f && doubler2[2][0] == 2.7f && doubler3[1][2][0] == 10.9f)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test07 step1");
+                throw new RuntimeException("ErrorResult in test07 step1");
             //Check the modified parameter values
             if(arr_dou1[3] == 4.8f && arr_dou2[2][0] == 2.7f && arr_dou3[1][2][0] == 10.9f)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test07 step2");
+                throw new RuntimeException("ErrorResult in test07 step2");
         }
         public void run()
         {
@@ -290,12 +290,12 @@ public class RC_Array_14 {
             if(VALUE10[3] == 4.8f && VALUE11[2][0] == 2.7f && VALUE12[1][2][0] == 10.9f)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test08 step1");
+                throw new RuntimeException("ErrorResult in test08 step1");
             //Check the modified parameter values
             if(rctest.double_base1[3] == 4.8f && rctest.double_base2[2][0] == 2.7f && rctest.double_base3[1][2][0] == 10.9f)
                 incCheckCount();
             else
-                System.out.println("ErrorResult in test08 step2");
+                throw new RuntimeException("ErrorResult in test08 step2");
 
         }
         public void run()
@@ -315,7 +315,7 @@ public class RC_Array_14 {
             if(value1.length == 4 && value2.length == 3  && value3.length == 2)
                 check++;
             else
-                System.out.println("ErrorResult in test09——2");
+                throw new RuntimeException("ErrorResult in test09——2");
 
             //ArrayIndexOutOfBoundsException
             try {
@@ -348,7 +348,7 @@ public class RC_Array_14 {
             if(value1.length == 4 && value2.length == 3  && value3.length == 2)
                 check++;
             else
-                System.out.println("ErrorResult in test09——2");
+                throw new RuntimeException("ErrorResult in test09——2");
 
             //NullPointerException
             value1 = null;

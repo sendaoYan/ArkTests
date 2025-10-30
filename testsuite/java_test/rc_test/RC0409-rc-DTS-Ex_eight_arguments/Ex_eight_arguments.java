@@ -38,7 +38,7 @@ public class Ex_eight_arguments {
         //test no static method no return throws exception
         try {
             Test.test04(first, second, third, four, five, six, seven, eight, nine, ten);
-            System.out.println("ErrorResult in test04 not catch Exception");
+            throw new RuntimeException("ErrorResult in test04 not catch Exception");
         } catch (ArrayIndexOutOfBoundsException e) {
             check_count++;
         }
@@ -47,21 +47,21 @@ public class Ex_eight_arguments {
         //test static method no return value throws exception
         try {
             test06(first, second, third, four, five, six, seven, eight, nine, ten);
-            System.out.println("ErrorResult in test06 not catch Exception");
+            throw new RuntimeException("ErrorResult in test06 not catch Exception");
         } catch (IllegalArgumentException e) {
             check_count++;
         }
         //test no static method return value throws exception
         try {
             boolean result7 = Test.test07(first, second, third, four, five, six, seven, eight, nine, ten);
-            System.out.println("ErrorResult in test07 not catch Exception");
+            throw new RuntimeException("ErrorResult in test07 not catch Exception");
         } catch (ArithmeticException e) {
             check_count++;
         }
         //test static method return value throws exception
         try {
             int[] result8 = test08(first, second, third, four, five, six, seven, eight, nine, ten);
-            System.out.println("ErrorResult in test08 not catch Exception");
+            throw new RuntimeException("ErrorResult in test08 not catch Exception");
         } catch (NegativeArraySizeException e) {
             check_count++;
         }
@@ -86,7 +86,7 @@ public class Ex_eight_arguments {
                 && eight == false && nine == (Object) false && ten[4] == 3301)
             check_count++;
         else
-            System.out.println("ErrorResult in test01");
+            throw new RuntimeException("ErrorResult in test01");
     }
     private static String test05(int first, byte second, char third, long four, float five, double six, String seven,
                                  Boolean eight, Object nine, int[] ten) {
@@ -105,7 +105,7 @@ public class Ex_eight_arguments {
                 && eight == false && nine == (Object) false && ten[4] == 3301)
             check_count++;
         else
-            System.out.println("ErrorResult in test05");
+            throw new RuntimeException("ErrorResult in test05");
         return new String("test05 is End");
     }
     private static void test06(int first, byte second, char third, long four, float five, double six, String seven,
@@ -126,7 +126,7 @@ public class Ex_eight_arguments {
                 && eight == false && nine == (Object) false && ten[4] == 3301)
             check_count++;
         else
-            System.out.println("ErrorResult in test06");
+            throw new RuntimeException("ErrorResult in test06");
         Array.getInt(test_ten, 5);
     }
     private static int[] test08(int first, byte second, char third, long four, float five, double six, String seven,
@@ -147,7 +147,7 @@ public class Ex_eight_arguments {
                 && eight == false && nine == (Object) false && ten[4] == 3301)
             check_count++;
         else
-            System.out.println("ErrorResult in test08");
+            throw new RuntimeException("ErrorResult in test08");
         int[] chck = new int[-1];
         return chck;
     }
@@ -168,7 +168,7 @@ public class Ex_eight_arguments {
                 && eight == false && nine == (Object) false && ten[4] == 3301)
             check_count++;
         else
-            System.out.println("ErrorResult in test02");
+            throw new RuntimeException("ErrorResult in test02");
     }
     private int test03(int first, byte second, char third, long four, float five, double six, String seven,
                        Boolean eight, Object nine, int[] ten) {
@@ -187,7 +187,7 @@ public class Ex_eight_arguments {
                 && eight == false && nine == (Object) false && ten[4] == 3301)
             check_count++;
         else
-            System.out.println("ErrorResult in test03");
+            throw new RuntimeException("ErrorResult in test03");
         return first;
     }
     private void test04(int first, byte second, char third, long four, float five, double six, String seven,
@@ -207,7 +207,7 @@ public class Ex_eight_arguments {
                 && eight == false && nine == (Object) false && ten[4] == 3301)
             check_count++;
         else
-            System.out.println("ErrorResult in test04");
+            throw new RuntimeException("ErrorResult in test04");
         ten[5] = 1988;
     }
     private boolean test07(int first, byte second, char third, long four, float five, double six, String seven,
@@ -228,7 +228,7 @@ public class Ex_eight_arguments {
                 && eight == false && nine == (Object) false && ten[4] == 3301)
             check_count++;
         else
-            System.out.println("ErrorResult in test07");
+            throw new RuntimeException("ErrorResult in test07");
         first = first / 0;
         return true;
     }

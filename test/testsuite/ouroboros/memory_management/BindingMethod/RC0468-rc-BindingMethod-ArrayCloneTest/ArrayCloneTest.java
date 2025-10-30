@@ -30,7 +30,7 @@ public class ArrayCloneTest {
         if (functionTest01()) {
             System.out.println("ExpectResult");
         } else {
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
         }
     }
 

@@ -134,7 +134,7 @@ public class CB_09 {
             if (result == 918)
                 System.out.println("ExpectResult");
         } catch (NullPointerException n) {
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
         }
     }
 

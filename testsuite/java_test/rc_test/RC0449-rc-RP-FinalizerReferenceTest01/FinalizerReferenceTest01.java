@@ -39,7 +39,7 @@ public class FinalizerReferenceTest01 {
         if (check == 0) {
             System.out.println("ExpectResult");
         } else {
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
         }
     }
     private static int oomTest() {

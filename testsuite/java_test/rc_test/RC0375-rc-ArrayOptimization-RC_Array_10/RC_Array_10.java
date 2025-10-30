@@ -90,7 +90,7 @@ public class RC_Array_10 {
                 && doubler1.length == 4 && doubler2.length == 3 && doubler21.length == 3 && doubler3.length == 2)
             check_count++;
         else
-            System.out.println("ErrorResult in check: " + test_method);
+            throw new RuntimeException("ErrorResult in check: " + test_method);
     }
     private static void test01() {
         /*test01:One, two, three-dimensional array type cyclic assignment*/
@@ -174,7 +174,7 @@ public class RC_Array_10 {
                 && tmp_double1[3] == (double) 4.4f && tmp_double2[2][0] == (double)7.7f && tmp_double3[1][2][0] == (double)10.3f)
             check_count++;
         else
-            System.out.println("ErrorResult in test01");
+            throw new RuntimeException("ErrorResult in test01");
     }
     private static void test02() {
         /*test02:One, two, three-dimensional array type System.arraycopy () assignment*/
@@ -244,7 +244,7 @@ public class RC_Array_10 {
                 && tmp_double1[3] == (double) 4.4f && tmp_double2[2][0] == (double)7.7f && tmp_double3[1][2][0] == (double)10.3f)
             check_count++;
         else
-            System.out.println("ErrorResult in test02");
+            throw new RuntimeException("ErrorResult in test02");
     }
     private static void test03()
     {
@@ -288,7 +288,7 @@ public class RC_Array_10 {
                 && tmp_double1[3] == (double) 4.4f && tmp_double2[2][0] == (double)7.7f && tmp_double3[1][2][0] == (double)10.3f)
             check_count++;
         else
-            System.out.println("ErrorResult in test03");
+            throw new RuntimeException("ErrorResult in test03");
     }
     private static void test04()
     {
@@ -332,7 +332,7 @@ public class RC_Array_10 {
                 && tmp_double1[3] == (double) 4.4f && tmp_double2[2][0] == (double)7.7f && tmp_double3[1][2][0] == (double)10.3f)
             check_count++;
         else
-            System.out.println("ErrorResult in test04");
+            throw new RuntimeException("ErrorResult in test04");
     }
     private static void test05()
     {
@@ -376,6 +376,6 @@ public class RC_Array_10 {
                 && tmp_double1[3] == (double) 4.4f && tmp_double2[2][0] == (double)7.7f && tmp_double3[1][2][0] == (double)10.3f)
             check_count++;
         else
-            System.out.println("ErrorResult in test05");
+            throw new RuntimeException("ErrorResult in test05");
     }
 }

@@ -42,7 +42,7 @@ public class TriggerGCTest03 {
             if (check == 0) {
                 System.out.println("ExpectResult");
             } else {
-                System.out.println("ErrorResult");
+                throw new RuntimeException("ErrorResult");
             }
         }
     }

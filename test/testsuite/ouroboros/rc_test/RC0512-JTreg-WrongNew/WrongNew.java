@@ -28,7 +28,7 @@ public class WrongNew {
         if (list != null) {
             System.out.println("ExpectResult");
         } else {
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
         }
     }
 

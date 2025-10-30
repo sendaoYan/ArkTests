@@ -29,12 +29,12 @@ public class RC_staticInput_02 {
         if (test.length == 4)
             System.out.println("ExpectResult");
         else
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
         test(4, test);
         if (test.length == 4)
             System.out.println("ExpectResult");
         else
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
     }
 
     public static void test(int first, int[] second) {
@@ -43,7 +43,7 @@ public class RC_staticInput_02 {
         if (second.length == 4)
             System.out.println("ExpectResult");
         else
-            System.out.println("ErrorResult");
+            throw new RuntimeException("ErrorResult");
     }
 
     public static void modify(int[] temp) {

@@ -37,8 +37,7 @@ public class RC_newObjectIassign_01 {
         for(int i =1; i<=100 ; i++){
             test_new_objct_assign();
             if(check != 5){
-                System.out.println("ErrorResult");
-                break;
+                throw new RuntimeException("ErrorResult");
             }else{
                 check=0;
                 str1=null;
