@@ -335,7 +335,6 @@ class CB_01_A1 {
     @Override
     public void finalize() throws Throwable {
         super.finalize();
-        //System.out.println("A finalize");
 
         CB_01.check = this;
 

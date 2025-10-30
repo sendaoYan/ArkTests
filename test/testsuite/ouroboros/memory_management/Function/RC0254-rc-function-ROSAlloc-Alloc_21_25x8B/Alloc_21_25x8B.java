@@ -66,11 +66,6 @@ public class Alloc_21_25x8B {
         int countSize23 = alloc_test(MAX_23_8B);
         int countSize24 = alloc_test(MAX_24_8B);
         int countSize25 = alloc_test(MAX_25_8B);
-        //System.out.println(countSize21);
-        //System.out.println(countSize22);
-        //System.out.println(countSize23);
-        //System.out.println(countSize24);
-        //System.out.println(countSize25);
 
         if (countSize21 == 674 && countSize22 == 646 && countSize23 == 621 && countSize24 == 599 && countSize25 == 577)
             System.out.println("ExpectResult");

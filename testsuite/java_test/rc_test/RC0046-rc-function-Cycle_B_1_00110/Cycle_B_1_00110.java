@@ -99,7 +99,6 @@ public class Cycle_B_1_00110 {
         a5_0.a4_0.add();
         a5_0.add();
         int nsum = a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a5_0.a4_0.sum + a5_0.sum;
-        //System.out.println(nsum);
         if (nsum == 27)
             System.out.println("ExpectResult");
     }

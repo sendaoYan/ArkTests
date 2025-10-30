@@ -57,7 +57,6 @@ public class Message61004 {
 //            Object result1 = method.invoke(instance, parameters1, parameters2);
         } catch (Error e) {
             str = e.getClass().toString();
-            //System.out.println(str);
             //e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();

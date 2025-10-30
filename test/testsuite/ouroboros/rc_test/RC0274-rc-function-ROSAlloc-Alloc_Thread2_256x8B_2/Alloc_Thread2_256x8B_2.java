@@ -43,7 +43,6 @@ class Alloc_Thread2_256x8B_2_01 extends Thread {
             }
         }
 
-        //System.out.println(check_size);
         if(check_size == 214274)
             checkout=true;
 

@@ -42,7 +42,6 @@ public class ConstructorExAccessibleObjectgetDeclaredAnnotationNullPointerExcept
         try {
             AccessibleObject sampleconstructor = SampleClass3.class.getConstructor(String.class);
             sampleconstructor.getDeclaredAnnotation(null);
-            //System.out.println(a.toString());
         } catch (NullPointerException e) {
             //e.printStackTrace();
             ConstructorExAccessibleObjectgetDeclaredAnnotationNullPointerException.res = ConstructorExAccessibleObjectgetDeclaredAnnotationNullPointerException.res - 2;
@@ -57,7 +56,6 @@ public class ConstructorExAccessibleObjectgetDeclaredAnnotationNullPointerExcept
             //T getDeclaredAnnotation(Class<T> annotationClass)
             AccessibleObject sampleconstructor = SampleClass3.class.getConstructor(String.class);
             CustomAnnotations3 a = sampleconstructor.getDeclaredAnnotation(CustomAnnotations3.class);
-            //System.out.println(a.toString());
             if (a.toString().equals("@CustomAnnotations3(name=sampleConstructor, value=Sample Constructor Annotation)")) {
                 ConstructorExAccessibleObjectgetDeclaredAnnotationNullPointerException.res = ConstructorExAccessibleObjectgetDeclaredAnnotationNullPointerException.res - 2;
             }

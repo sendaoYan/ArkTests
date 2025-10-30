@@ -35,10 +35,8 @@ class ThreadRc_Cycle_am_00460 extends Thread {
         a1_main.a2_0.a3_0.a4_0.add();
         a1_main.a2_0.a3_0.a4_0.a6_0.add();
         int result = a1_main.sum + a5_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a4_0.sum + a1_main.a2_0.a3_0.a4_0.a6_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
         if (result == 1550)
             checkout = true;
-        //System.out.println(checkout);
     }
     public boolean check() {
         return checkout;

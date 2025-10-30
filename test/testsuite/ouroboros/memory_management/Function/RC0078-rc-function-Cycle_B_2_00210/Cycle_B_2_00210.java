@@ -208,7 +208,6 @@ public class Cycle_B_2_00210 {
         a1_0.a2_0.a3_0.a4_0.a5_0.a6_0.a8_0.a9_0.add();
         a1_0.a2_0.a3_0.a4_0.a5_0.a6_0.a8_0.a9_0.a7_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a1_0.a2_0.a3_0.a4_0.sum + a1_0.a2_0.a3_0.a4_0.a5_0.sum + a1_0.a2_0.a3_0.a4_0.a5_0.a6_0.sum + a1_0.a2_0.a3_0.a4_0.a5_0.a6_0.a8_0.sum + a1_0.a2_0.a3_0.a4_0.a5_0.a6_0.a8_0.a9_0.sum + a1_0.a2_0.a3_0.a4_0.a5_0.a6_0.a8_0.a9_0.a7_0.sum);
-        //System.out.println(nsum);
         if (nsum == 94)
             System.out.println("ExpectResult");
     }

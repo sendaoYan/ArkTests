@@ -80,7 +80,6 @@ public class CharacterNativeUncover {
 	public static boolean test2(Character character) {
 		try {
 			boolean flag = Character.isUpperCase(65);//isUpperCaseImpl() called by isUpperCase();
-			//System.out.println(flag);
 			if (flag) {
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
@@ -100,7 +99,6 @@ public class CharacterNativeUncover {
 	public static boolean test3(Character character) {
 		try {	
 		boolean flag = Character.isTitleCase(0x01c8);//isTitleCaseImpl() called by isTitleCase();
-			//System.out.println(flag);
 		if (flag) {
 			CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 		}else {
@@ -120,7 +118,6 @@ public class CharacterNativeUncover {
 	public static boolean test4(Character character) {
 		try {
 			boolean flag = Character.isDigit(0x06f8);//isDigitImpl() called by isDigit();judge if it`s number;
-			//System.out.println(flag);
 			if (flag) {
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
@@ -140,7 +137,6 @@ public class CharacterNativeUncover {
 	public static boolean test5(Character character) {
 			try {
 			boolean flag = Character.isDefined(0x012345);//isDefinedImpl()  called by isDefined();
-			//System.out.println(flag);
 			if (flag) {
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
@@ -160,7 +156,6 @@ public class CharacterNativeUncover {
 	public static boolean test6(Character character) {
 			try {
 			boolean flag = Character.isLetter(0x0065);//isLetterImpl() called by isLetter();tell if it`s char type;
-			//System.out.println(flag);
 			if (flag) {
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
@@ -180,7 +175,6 @@ public class CharacterNativeUncover {
 	public static boolean test7(Character character) {
 		try {
 			boolean flag = Character.isLetterOrDigit(0x0033);//isLetterOrDigitImpl() called by isLetterOrDigit();tell if it`s char type;
-			//System.out.println(flag);
 			if (flag) {
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
@@ -200,7 +194,6 @@ public class CharacterNativeUncover {
 	public static boolean test8(Character character) {
 		try {
 			boolean flag = Character.isAlphabetic(0x0065);//isAlphabeticImpl() called by  isAlphabetic(); tell if it`s char type;
-			//System.out.println(flag);
 			if (flag) {
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
@@ -221,7 +214,6 @@ public class CharacterNativeUncover {
 		try {
 			boolean flag = Character.isIdeographic(0x0065);//isIdeographicImpl() called by isIdeographic();
 			if (!flag) {
-				//System.out.println(flag);
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
 				return false;
@@ -241,7 +233,6 @@ public class CharacterNativeUncover {
 		try {
 			boolean flag = Character.isUnicodeIdentifierStart(0x0065);//isUnicodeIdentifierStartImpl() called by isUnicodeIdentifierStart();
 			if (flag) {
-				//System.out.println(flag);
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
 				return false;
@@ -261,7 +252,6 @@ public class CharacterNativeUncover {
 		try {
 			boolean flag = Character.isUnicodeIdentifierPart(0x053e);//isUnicodeIdentifierPartImpl() called by isUnicodeIdentifierPart();
 			if (flag) {
-				//System.out.println(flag);
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
 				return false;
@@ -282,7 +272,6 @@ public class CharacterNativeUncover {
 			try {
 			boolean flag = Character.isIdentifierIgnorable(0x053e);//isIdentifierIgnorableImpl() called by isIdentifierIgnorable();
 			if (!flag) {
-				//System.out.println(flag);
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
 				return false;
@@ -302,7 +291,6 @@ public class CharacterNativeUncover {
 		try {
 			int num = Character.toLowerCase(0x053e);//toLowerCaseImpl() called by toLowerCase();
 			if (num == 1390) {
-				//System.out.println(num);
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
 				return false;
@@ -322,7 +310,6 @@ public class CharacterNativeUncover {
 		try {
 			int num = Character.toUpperCase(0x053e);//toUpperCaseImpl() called by toUpperCase();
 			if (num == 1342) {
-				//System.out.println(num);
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
 				return false;
@@ -342,7 +329,6 @@ public class CharacterNativeUncover {
 		try {
 			int num = Character.toTitleCase(0x053e);//toTitleCaseImpl() called by toTitleCase();
 			if (num == 1342) {
-				//System.out.println(num);
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
 				return false;
@@ -362,7 +348,6 @@ public class CharacterNativeUncover {
 		try {
 			int num = Character.digit(9,2);//digitImpl() called by digit();
 			if (num == -1) {
-				//System.out.println(num);
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
 				return false;
@@ -382,7 +367,6 @@ public class CharacterNativeUncover {
 		try {
 			int num = Character.getNumericValue(9);//getNumericValueImpl() called by getNumericValue();
 			if (num == -1) {
-				//System.out.println(num);
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
 				return false;
@@ -402,7 +386,6 @@ public class CharacterNativeUncover {
 		try {
 			boolean flag = Character.isSpaceChar(9);//isSpaceCharImpl()  called by isSpaceChar();
 			if (!flag) {
-				//System.out.println(flag);
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
 				return false;
@@ -422,7 +405,6 @@ public class CharacterNativeUncover {
 		try {
 			boolean flag = Character.isWhitespace(9);//isWhitespaceImpl() called by isWhitespace();
 			if (flag) {
-				//System.out.println(flag);
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
 				return false;
@@ -442,7 +424,6 @@ public class CharacterNativeUncover {
 		try {
 			int num = Character.getType(9);//getTypeImpl() called by getType();
 			if (num == 15) {
-				//System.out.println(num);
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
 				return false;
@@ -462,7 +443,6 @@ public class CharacterNativeUncover {
 		try {
 			int num = Character.getDirectionality(9);//getDirectionalityImpl() called by getDirectionality();
 			if (num == 11) {
-				//System.out.println(num);
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
 				return false;
@@ -482,7 +462,6 @@ public class CharacterNativeUncover {
 		try {
 			boolean flag = Character.isMirrored(9);//isMirroredImpl() called by isMirrored();
 			if (!flag) {
-				//System.out.println(flag);
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
 				return false;
@@ -503,7 +482,6 @@ public class CharacterNativeUncover {
 			String string = Character.getName(9);//getNameImpl() called by getName();
 			//if (string.equals("CHARACTER TABULATION")) {
 			if(string.equals("<control-0009>")){
-				//System.out.println(string);
 				CharacterNativeUncover.res = CharacterNativeUncover.res - 2;
 			}else {
 				return false;

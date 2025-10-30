@@ -88,7 +88,6 @@ public class Nocycle_a_00020 {
         a1_main.b2_0.add();
 //		 System.out.printf("RC-Testing_Result=%d\n",a1_main.sum+a1_main.b1_0.sum+a1_main.b2_0.sum);
         int result = a1_main.sum + a1_main.b1_0.sum + a1_main.b2_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
         if (result == 1310)
             System.out.println("ExpectResult");
     }

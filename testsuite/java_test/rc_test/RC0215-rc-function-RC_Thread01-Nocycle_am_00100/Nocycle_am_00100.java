@@ -49,10 +49,8 @@ class ThreadRc_00100 extends Thread {
 //		 System.out.printf("j=%d\n",a1_main.b1_0.c1_0.d1_0.e1_0.f1_0.g1_0.h1_0.i1_0.j1_0.sum);
 //		 System.out.printf("RC-Testing_Result=%d\n",a1_main.sum+a1_main.b1_0.sum+a1_main.b1_0.c1_0.sum+a1_main.b1_0.c1_0.d1_0.sum+a1_main.b1_0.c1_0.d1_0.e1_0.sum+a1_main.b1_0.c1_0.d1_0.e1_0.f1_0.sum+a1_main.b1_0.c1_0.d1_0.e1_0.f1_0.g1_0.sum+a1_main.b1_0.c1_0.d1_0.e1_0.f1_0.g1_0.h1_0.sum+a1_main.b1_0.c1_0.d1_0.e1_0.f1_0.g1_0.h1_0.i1_0.sum+a1_main.b1_0.c1_0.d1_0.e1_0.f1_0.g1_0.h1_0.i1_0.j1_0.sum);
         int result = a1_main.sum + a1_main.b1_0.sum + a1_main.b1_0.c1_0.sum + a1_main.b1_0.c1_0.d1_0.sum + a1_main.b1_0.c1_0.d1_0.e1_0.sum + a1_main.b1_0.c1_0.d1_0.e1_0.f1_0.sum + a1_main.b1_0.c1_0.d1_0.e1_0.f1_0.g1_0.sum + a1_main.b1_0.c1_0.d1_0.e1_0.f1_0.g1_0.h1_0.sum + a1_main.b1_0.c1_0.d1_0.e1_0.f1_0.g1_0.h1_0.i1_0.sum + a1_main.b1_0.c1_0.d1_0.e1_0.f1_0.g1_0.h1_0.i1_0.j1_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
         if (result == 11920)
             checkout = true;
-        //System.out.println(checkout);
     }
     public boolean check() {
         return checkout;

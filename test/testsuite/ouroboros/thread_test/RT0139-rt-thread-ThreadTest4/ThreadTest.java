@@ -52,7 +52,6 @@ public class ThreadTest {
             if (count == estimateLength) {
                 estimateLength *= 2;
             } else {
-                //System.out.println(count);
                 break;
             }
         }

@@ -45,10 +45,8 @@ class ThreadRc_00110 extends Thread {
         a1_main.d5_0.add();
 //		 System.out.printf("RC-Testing_Result=%d\n",a1_main.sum+a1_main.b1_0.sum+a1_main.b2_0.sum+a1_main.b3_0.sum+a1_main.b4_0.sum+a1_main.b2_0.c2_0.sum+a1_main.b3_0.c1_0.sum+a1_main.b4_0.c3_0.sum+a1_main.b1_0.d1_0.sum+a1_main.b3_0.c1_0.d2_0.sum+a1_main.b2_0.c2_0.d3_0.sum+a1_main.b2_0.c2_0.d4_0.sum+a1_main.d5_0.sum);
         int result = a1_main.sum + a1_main.b1_0.sum + a1_main.b2_0.sum + a1_main.b3_0.sum + a1_main.b4_0.sum + a1_main.b2_0.c2_0.sum + a1_main.b3_0.c1_0.sum + a1_main.b4_0.c3_0.sum + a1_main.b1_0.d1_0.sum + a1_main.b3_0.c1_0.d2_0.sum + a1_main.b2_0.c2_0.d3_0.sum + a1_main.b2_0.c2_0.d4_0.sum + a1_main.d5_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
         if (result == 9881)
             checkout = true;
-        //System.out.println(checkout);
     }
     public boolean check() {
         return checkout;

@@ -31,11 +31,9 @@ class ThreadRc_Nocycle_am_2_00010B extends Thread {
         a2_main.add();
         //		 System.out.printf("RC-Testing_Result=%d\n",a1_main.sum+a1_main.b1_0.sum+a1_main.b2_0.sum+a1_main.b3_0.sum);
         int result = a1_main.sum + a1_main.b1_0.sum + a1_main.b2_0.sum + a1_main.b3_0.sum + a2_main.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1939)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -157,7 +155,6 @@ class ThreadRc_Nocycle_am_2_00020B extends Thread {
 //		 System.out.printf("RC-Testing_Result=%d\n",a1_main.sum+a1_main.b1_0.sum+a1_main.b2_0.sum+a1_main.b3_0.sum+a1_main.b4_0.sum+a1_main.b4_0.c1_0.sum+a1_main.b4_0.c2_0.sum+a1_main.b4_0.c3_0.sum);
 
         int result1 = a1_main.sum + a1_main.b1_0.sum + a1_main.b2_0.sum + a1_main.b3_0.sum + a1_main.b4_0.sum + a1_main.b4_0.c1_0.sum + a1_main.b4_0.c2_0.sum + a1_main.b4_0.c3_0.sum;
-        //System.out.println("RC-Testing_Result="+result1);
         Nocycle_a_2_00020_2A1 a1_main2 = new Nocycle_a_2_00020_2A1("a1_main2");
         a1_main2.b1_0 = new Nocycle_a_2_00020_2B1("b1_0");
         a1_main2.b1_0.c1_0 = new Nocycle_a_2_00020_2C1("c1_0");
@@ -254,7 +251,6 @@ class ThreadRc_Nocycle_am_2_00020B extends Thread {
 
         if (result == 26225)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {

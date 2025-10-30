@@ -52,7 +52,6 @@ public class ThrowableNativeUncover {
         try {
             Throwable throwable2 = throwable.fillInStackTrace();//nativeFillInStackTrace() called by fillInStackTrace();
             if (throwable2.toString().equals("java.lang.Throwable")) {
-                //System.out.println(throwable2.toString());
                 ThrowableNativeUncover.res = ThrowableNativeUncover.res - 2;
             }
         } catch (Exception e) {
@@ -72,8 +71,6 @@ public class ThrowableNativeUncover {
         try {
             StackTraceElement[] stackTraceElements = throwable.getStackTrace();//nativeGetStackTrace() called by getStackTrace();
             if (stackTraceElements.length == 3 && stackTraceElements.getClass().toString().equals("class [Ljava.lang.StackTraceElement;")) {
-                //System.out.println(stackTraceElements.length);
-                //System.out.println(stackTraceElements.getClass().toString());
                 ThrowableNativeUncover.res = ThrowableNativeUncover.res - 2;
             }
         } catch (Exception e) {

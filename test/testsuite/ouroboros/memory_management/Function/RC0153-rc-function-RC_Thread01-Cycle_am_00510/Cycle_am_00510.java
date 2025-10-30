@@ -51,11 +51,9 @@ class ThreadRc_Cycle_am_00180B extends Thread {
 
 
         int result = a1_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a4_0.sum + a1_main.a2_0.a3_0.a4_0.a5_0.sum + a1_main.a2_0.a3_0.a4_0.a5_0.a6_0.sum + a1_main.a8_0.sum + a1_main.a8_0.a9_0.sum + a1_main.a8_0.a9_0.a7_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1994)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -268,11 +266,9 @@ class ThreadRc_Cycle_am_00190B extends Thread {
 
 
         int result = a1_main.sum + a10_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a4_0.sum + a1_main.a2_0.a3_0.a4_0.a5_0.sum + a1_main.a2_0.a3_0.a4_0.a5_0.a6_0.sum + a10_main.a8_0.sum + a10_main.a8_0.a9_0.sum + a10_main.a8_0.a9_0.a7_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 2215)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -497,11 +493,9 @@ class ThreadRc_Cycle_am_00200B extends Thread {
         a1_main.a2_0.a6_0.a7_0.add();
 
         int result = a1_main.sum + a4_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a5_0.sum + a1_main.a2_0.a6_0.sum + a1_main.a2_0.a6_0.a7_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1773)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -671,11 +665,9 @@ class ThreadRc_Cycle_am_00210B extends Thread {
         a1_main.a2_0.a3_0.a6_0.a7_0.add();
 
         int result = a1_main.sum + a4_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a5_0.sum + a1_main.a2_0.a3_0.a6_0.sum + a1_main.a2_0.a3_0.a6_0.a7_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1662)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -846,11 +838,9 @@ class ThreadRc_Cycle_am_00220B extends Thread {
         a1_main.a2_0.a3_0.a5_0.a7_0.add();
 
         int result = a1_main.sum + a4_main.sum + a6_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a5_0.sum + a6_main.a7_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1772)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -1020,11 +1010,9 @@ class ThreadRc_Cycle_am_00230B extends Thread {
         a5_main.a6_0.add();
 
         int result = a1_main.sum + a5_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a4_0.sum + a5_main.a6_0.sum + a5_main.a7_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1773)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -1194,11 +1182,9 @@ class ThreadRc_Cycle_am_00240B extends Thread {
         a1_main.a6_0.a7_0.add();
 
         int result = a1_main.sum + a5_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a4_0.sum + a1_main.a6_0.sum + a1_main.a6_0.a7_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1660)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -1364,11 +1350,9 @@ class ThreadRc_Cycle_am_00250B extends Thread {
         a1_main.a2_0.a3_0.a5_0.add();
 
         int result = a1_main.sum + a6_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a5_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1238)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -1496,11 +1480,9 @@ class ThreadRc_Cycle_am_00260B extends Thread {
         a1_main.a2_0.a3_0.a5_0.add();
 
         int result = a1_main.sum + a6_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a5_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1239)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -1628,11 +1610,9 @@ class ThreadRc_Cycle_am_00270B extends Thread {
         a1_main.a2_0.a3_0.a5_0.add();
 
         int result = a1_main.sum + a6_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a5_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1240)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -1762,11 +1742,9 @@ class ThreadRc_Cycle_am_00280B extends Thread {
         a1_main.a2_0.a3_0.a5_0.add();
 
         int result = a1_main.sum + a6_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a5_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1443)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -1901,11 +1879,9 @@ class ThreadRc_Cycle_am_00290B extends Thread {
         a1_main.a2_0.a3_0.a6_0.add();
 
         int result = a1_main.sum + a5_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a4_0.sum + a1_main.a2_0.a3_0.a6_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1447)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -2055,11 +2031,9 @@ class ThreadRc_Cycle_am_00300B extends Thread {
         a1_main.a2_0.a3_0.a4_0.a6_0.add();
 
         int result = a1_main.sum + a5_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a4_0.sum + a1_main.a2_0.a3_0.a4_0.a6_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1448)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -2211,11 +2185,9 @@ class ThreadRc_Cycle_am_00310B extends Thread {
         a1_main.a2_0.a3_0.a5_0.add();
 
         int result = a1_main.sum + a4_main.sum + a6_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a5_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1552)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -2368,11 +2340,9 @@ class ThreadRc_Cycle_am_00320B extends Thread {
         a1_main.a2_0.a3_0.a5_0.add();
 
         int result = a1_main.sum + a4_main.sum + a6_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a5_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1551)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -2531,11 +2501,9 @@ class ThreadRc_Cycle_am_00330B extends Thread {
         a1_main.a2_0.a3_0.a5_0.a8_0.a7_0.add();
 
         int result = a1_main.sum + a4_main.sum + a6_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a5_0.sum + a6_main.a3_0.a5_0.a8_0.a7_0.sum + a6_main.a3_0.a5_0.a8_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 2080)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -2734,11 +2702,9 @@ class ThreadRc_Cycle_am_00340B extends Thread {
         a1_main.a2_0.a3_0.a8_0.a7_0.add();
 
         int result = a1_main.sum + a4_main.sum + a6_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a5_0.sum + a6_main.a3_0.a8_0.a7_0.sum + a6_main.a3_0.a8_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 2079)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -2937,11 +2903,9 @@ class ThreadRc_Cycle_am_00350B extends Thread {
         a1_main.a2_0.a3_0.a5_0.a8_0.a7_0.add();
 
         int result = a1_main.sum + a4_main.sum + a6_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a5_0.sum + a6_main.a3_0.a5_0.a8_0.a7_0.sum + a6_main.a3_0.a5_0.a8_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 2079)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -3144,11 +3108,9 @@ class ThreadRc_Cycle_am_00360B extends Thread {
         a1_main.a2_0.a3_0.a5_0.a8_0.a7_0.add();
 
         int result = a1_main.sum + a4_main.sum + a6_main.sum + a9_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a5_0.sum + a6_main.a3_0.a5_0.a8_0.a7_0.sum + a6_main.a3_0.a5_0.a8_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 2399)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -3374,11 +3336,9 @@ class ThreadRc_Cycle_am_00370B extends Thread {
         a1_main.a2_0.a3_0.a5_0.a8_0.a7_0.add();
 
         int result = a1_main.sum + a4_main.sum + a6_main.sum + a9_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a5_0.sum + a6_main.a3_0.a5_0.a8_0.a7_0.sum + a6_main.a3_0.a5_0.a8_0.sum + a6_main.a3_0.a10_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 2623)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -3603,11 +3563,9 @@ class ThreadRc_Cycle_am_00380B extends Thread {
         a1_main.a2_0.a3_0.add();
 
         int result = a1_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 815)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -3694,11 +3652,9 @@ class ThreadRc_Cycle_am_00390B extends Thread {
         a1_main.a2_0.a3_0.add();
 
         int result = a1_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 918)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -3786,11 +3742,9 @@ class ThreadRc_Cycle_am_00400B extends Thread {
         a1_main.a4_0.add();
 
         int result = a1_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a4_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 923)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -3893,11 +3847,9 @@ class ThreadRc_Cycle_am_00410B extends Thread {
         a1_main.a2_0.a4_0.add();
 
         int result = a1_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a4_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 921)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -4001,11 +3953,9 @@ class ThreadRc_Cycle_am_00420B extends Thread {
         a1_main.a2_0.a3_0.a4_0.add();
 
         int result = a1_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a4_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 923)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -4112,11 +4062,9 @@ class ThreadRc_Cycle_am_00430B extends Thread {
 
 
         int result = a1_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a4_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1124)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -4225,11 +4173,9 @@ class ThreadRc_Cycle_am_00440B extends Thread {
 
 
         int result = a1_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a4_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1023)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -4342,11 +4288,9 @@ class ThreadRc_Cycle_am_00450B extends Thread {
 
 
         int result = a1_main.sum + a6_main.sum + a7_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a5_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1453)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -4497,11 +4441,9 @@ class ThreadRc_Cycle_am_00460B extends Thread {
         a1_main.a2_0.a3_0.a4_0.a6_0.add();
 
         int result = a1_main.sum + a5_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a4_0.sum + a1_main.a2_0.a3_0.a4_0.a6_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1550)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -4653,11 +4595,9 @@ class ThreadRc_Cycle_am_00470B extends Thread {
         a1_main.a2_0.a3_0.a4_0.a6_0.add();
 
         int result = a1_main.sum + a5_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a4_0.sum + a1_main.a2_0.a3_0.a4_0.a6_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1446)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -4828,11 +4768,9 @@ class ThreadRc_Cycle_am_00480B extends Thread {
 //         System.out.printf("RC-Testing_Result=%d\n",a1_main.sum+a5_main.sum+a1_main.a2_0.sum+a1_main.a2_0.a3_0.sum+a1_main.a2_0.a3_0.a4_0.sum+a1_main.a2_0.a3_0.a4_0.a6_0.sum);
 
         int result = a1_main.sum + a5_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a4_0.sum + a1_main.a2_0.a3_0.a4_0.a6_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 1550)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -5014,11 +4952,9 @@ class ThreadRc_Cycle_am_00490B extends Thread {
 //         System.out.printf("RC-Testing_Result=%d\n",a1_main.sum+a4_main.sum+a7_main.sum+a1_main.a2_0.sum+a1_main.a2_0.a3_0.sum+a4_main.a5_0.sum+a4_main.a5_0.a6_0.sum+a7_main.a9_0.sum+a7_main.a9_0.a8_0.sum);
 
         int result = a1_main.sum + a4_main.sum + a7_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a4_main.a5_0.sum + a4_main.a5_0.a6_0.sum + a7_main.a9_0.sum + a7_main.a9_0.a8_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 2098)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -5241,11 +5177,9 @@ class ThreadRc_Cycle_am_00500B extends Thread {
         a7_main.a9_0.a8_0.a7_0.add();
 
         int result = a1_main.sum + a4_main.sum + a7_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a4_main.a5_0.sum + a4_main.a5_0.a6_0.sum + a7_main.a9_0.sum + a7_main.a9_0.a8_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 2099)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {

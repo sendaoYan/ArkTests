@@ -43,7 +43,6 @@ public class Alloc_B256x8B {
     public static void main(String[] args) {
         store = new ArrayList<byte[]>();
         int result = alloc_test(MAX_B256_8B);
-        //System.out.println(result);
         if ( result == 46939)
             System.out.println("ExpectResult");
         else

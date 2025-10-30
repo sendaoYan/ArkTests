@@ -66,11 +66,6 @@ public class Alloc_31_35x8B {
         int countSize33 = alloc_test(MAX_33_8B);
         int countSize34 = alloc_test(MAX_34_8B);
         int countSize35 = alloc_test(MAX_35_8B);
-        //System.out.println(countSize31);
-        //System.out.println(countSize32);
-        //System.out.println(countSize33);
-        //System.out.println(countSize34);
-        //System.out.println(countSize35);
 
         if (countSize31 == 612 && countSize32 == 596 && countSize33 == 580 && countSize34 == 564 && countSize35 == 550)
             System.out.println("ExpectResult");

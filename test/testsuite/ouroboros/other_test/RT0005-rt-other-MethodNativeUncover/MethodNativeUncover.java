@@ -62,8 +62,6 @@ private static int res = 99;
             Method method = class1.getMethod("sayHello");
             Class[] newClass = method.getExceptionTypes();
             if (newClass.length == 0 && newClass.getClass().toString().equals("class [Ljava.lang.Class;")) {
-            //System.out.println(newClass.length);
-            //System.out.println(newClass.getClass());
             MethodNativeUncover.res = MethodNativeUncover.res - 2;
             }
         } catch (NoSuchMethodException e) {
@@ -85,7 +83,6 @@ private static int res = 99;
             Method method = class1.getMethod("sayHello");
             Object object = method.getDefaultValue();
             if (object == null) {
-            //System.out.println(object);
             MethodNativeUncover.res = MethodNativeUncover.res - 2;
             }
         } catch (NoSuchMethodException e) {

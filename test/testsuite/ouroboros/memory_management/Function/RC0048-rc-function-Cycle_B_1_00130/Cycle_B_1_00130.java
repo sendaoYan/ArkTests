@@ -93,7 +93,6 @@ public class Cycle_B_1_00130 {
         a2_0.add();
         a3_0.add();
         int nsum = (a1_0.sum + a2_0.sum + a3_0.sum);
-        //System.out.println(nsum);
         if (nsum == 13)
             System.out.println("ExpectResult");
     }

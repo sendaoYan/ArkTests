@@ -115,7 +115,6 @@ public class Cycle_B_1_10010 {
         a1_10.a2_0.add();
         a1_10.a2_0.a3_0.add();
         int nsum2 = (a1_10.sum + a1_10.a2_0.sum + a1_10.a2_0.a3_0.sum);
-        //System.out.println(nsum);
         nsum += nsum2;
         if (nsum == 24)
             System.out.println("ExpectResult");

@@ -93,7 +93,6 @@ public class PlacementRCTest02 {
         onlyUseInsideLoop();
         defAndUseInsideLoop();
         new PlacementRCTest02().defInsideAndUseOutsideLoop();
-        //System.out.println(result);
         if(result.contains("Method1") && result.contains("Method2") && result.contains("Method3") && result.contains("End"))
             System.out.println("ExpectResult");
         else

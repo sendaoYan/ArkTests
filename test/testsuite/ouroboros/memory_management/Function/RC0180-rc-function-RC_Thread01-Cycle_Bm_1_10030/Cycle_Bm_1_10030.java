@@ -43,12 +43,10 @@ class ThreadRc_Cycle_Bm_1_10010B extends Thread {
         a1_10.a2_0.add();
         a1_10.a2_0.a3_0.add();
         int nsum2 = (a1_10.sum + a1_10.a2_0.sum + a1_10.a2_0.a3_0.sum);
-        //System.out.println(nsum);
         nsum += nsum2;
 
         if (nsum == 24)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -188,7 +186,6 @@ class ThreadRc_Cycle_Bm_1_10020B extends Thread {
 
         if (nsum == 61)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {

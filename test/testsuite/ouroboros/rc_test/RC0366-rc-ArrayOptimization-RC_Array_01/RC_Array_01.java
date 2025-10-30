@@ -128,7 +128,6 @@ public class RC_Array_01 extends Base_001{
             System.out.println("RC_Array_Exception ErrorResult");
 
         //Result judgment
-        //System.out.println(check_count);
         if(check_count == 24)
             System.out.println("ExpectResult");
 

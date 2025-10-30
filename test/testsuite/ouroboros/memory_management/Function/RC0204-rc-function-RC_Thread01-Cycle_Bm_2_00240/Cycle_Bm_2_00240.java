@@ -38,11 +38,9 @@ class ThreadRc_Cycle_Bm_2_00010B extends Thread {
         a1_0.a2_0.a3_0.add();
         a1_0.a2_0.a4_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a1_0.a2_0.a4_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 18)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -131,11 +129,9 @@ class ThreadRc_Cycle_Bm_2_00020B extends Thread {
         a1_0.a2_0.a3_0.add();
         a1_0.a2_0.a3_0.a4_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a1_0.a2_0.a3_0.a4_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 19)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -227,11 +223,9 @@ class ThreadRc_Cycle_Bm_2_00030B extends Thread {
         a1_0.a2_0.a3_0.add();
         a4_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a4_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 16)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -321,11 +315,9 @@ class ThreadRc_Cycle_Bm_2_00040B extends Thread {
         a1_0.a2_0.a3_0.add();
         a1_0.a2_0.a3_0.a4_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a4_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 19)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -420,11 +412,9 @@ class ThreadRc_Cycle_Bm_2_00050B extends Thread {
         a4_0.add();
         a4_0.a3_0.a5_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a4_0.sum + a4_0.a3_0.a5_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 28)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -536,11 +526,9 @@ class ThreadRc_Cycle_Bm_2_00060B extends Thread {
         a4_0.add();
         a4_0.a3_0.a5_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a4_0.sum + a4_0.a3_0.a5_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 28)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -656,11 +644,9 @@ class ThreadRc_Cycle_Bm_2_00070B extends Thread {
         a6_0.add();
         a4_0.a3_0.a5_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a4_0.sum + a4_0.a3_0.a5_0.sum + a6_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 37)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -789,11 +775,9 @@ class ThreadRc_Cycle_Bm_2_00080B extends Thread {
         a4_0.add();
         a4_0.a3_0.a5_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a4_0.sum + a4_0.a3_0.a5_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 28)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -903,11 +887,9 @@ class ThreadRc_Cycle_Bm_2_00090B extends Thread {
         a1_0.a2_0.add();
         a3_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a3_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 9)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -982,11 +964,9 @@ class ThreadRc_Cycle_Bm_2_00100B extends Thread {
         a1_0.a2_0.a3_0.a4_0.add();
         a1_0.a2_0.a3_0.a4_0.a5_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a1_0.a2_0.a3_0.a4_0.sum + a1_0.a2_0.a3_0.a4_0.a5_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 29)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -1093,11 +1073,9 @@ class ThreadRc_Cycle_Bm_2_00110B extends Thread {
         a1_0.a2_0.a4_0.add();
         a1_0.a2_0.a4_0.a5_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a1_0.a2_0.a4_0.sum + a1_0.a2_0.a4_0.a5_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 28)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -1204,11 +1182,9 @@ class ThreadRc_Cycle_Bm_2_00120B extends Thread {
         a1_0.a4_0.add();
         a1_0.a4_0.a5_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a1_0.a4_0.sum + a1_0.a4_0.a5_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 27)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -1318,11 +1294,9 @@ class ThreadRc_Cycle_Bm_2_00130B extends Thread {
         a5_0.add();
         a1_0.a2_0.a3_0.a4_0.a6_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a1_0.a2_0.a3_0.a4_0.sum + a5_0.sum + a1_0.a2_0.a3_0.a4_0.a6_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 45)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -1445,11 +1419,9 @@ class ThreadRc_Cycle_Bm_2_00140B extends Thread {
         a1_0.a2_0.a3_0.add();
 
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 13)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -1521,11 +1493,9 @@ class ThreadRc_Cycle_Bm_2_00150B extends Thread {
         a1_0.a2_0.a3_0.add();
 
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 14)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -1596,11 +1566,9 @@ class ThreadRc_Cycle_Bm_2_00160B extends Thread {
         a1_0.a2_0.a3_0.add();
 
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 15)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -1673,11 +1641,9 @@ class ThreadRc_Cycle_Bm_2_00170B extends Thread {
         a1_0.a2_0.a3_0.add();
         a1_0.a2_0.a4_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a1_0.a2_0.a4_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 21)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -1764,11 +1730,9 @@ class ThreadRc_Cycle_Bm_2_00180B extends Thread {
         a1_0.a2_0.add();
         a1_0.a2_0.a3_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a1_0.a2_0.a3_0.a4_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 15)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -1856,11 +1820,9 @@ class ThreadRc_Cycle_Bm_2_00190B extends Thread {
         a1_0.a2_0.add();
         a1_0.a2_0.a3_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a1_0.a2_0.a3_0.a4_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 15)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -1950,11 +1912,9 @@ class ThreadRc_Cycle_Bm_2_00200B extends Thread {
         a1_0.a2_0.add();
         a1_0.a2_0.a3_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a4_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 16)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -2054,11 +2014,9 @@ class ThreadRc_Cycle_Bm_2_00210B extends Thread {
         a1_0.a2_0.a3_0.a4_0.a5_0.a6_0.a8_0.a9_0.add();
         a1_0.a2_0.a3_0.a4_0.a5_0.a6_0.a8_0.a9_0.a7_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a1_0.a2_0.a3_0.a4_0.sum + a1_0.a2_0.a3_0.a4_0.a5_0.sum + a1_0.a2_0.a3_0.a4_0.a5_0.a6_0.sum + a1_0.a2_0.a3_0.a4_0.a5_0.a6_0.a8_0.sum + a1_0.a2_0.a3_0.a4_0.a5_0.a6_0.a8_0.a9_0.sum + a1_0.a2_0.a3_0.a4_0.a5_0.a6_0.a8_0.a9_0.a7_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 94)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -2237,11 +2195,9 @@ class ThreadRc_Cycle_Bm_2_00220B extends Thread {
         a1_0.a8_0.a9_0.add();
         a1_0.a8_0.a9_0.a7_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a1_0.a2_0.a3_0.a4_0.sum + a1_0.a2_0.a3_0.a4_0.a5_0.sum + a1_0.a2_0.a3_0.a4_0.a5_0.a6_0.sum + a1_0.a8_0.sum + a1_0.a8_0.a9_0.sum + a1_0.a8_0.a9_0.a7_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 94)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {
@@ -2424,11 +2380,9 @@ class ThreadRc_Cycle_Bm_2_00230B extends Thread {
         a10_0.a8_0.a9_0.a7_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a1_0.a2_0.a3_0.a4_0.sum + a1_0.a2_0.a3_0.a4_0.a5_0.sum + a1_0.a2_0.a3_0.a4_0.a5_0.a6_0.sum + a10_0.a8_0.sum + a10_0.a8_0.a9_0.sum + a10_0.a8_0.a9_0.a7_0.sum);
 
-        //System.out.println(nsum);
 
         if (nsum == 97)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {

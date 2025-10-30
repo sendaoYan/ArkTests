@@ -126,7 +126,6 @@ public class RC_Array_02 extends Base_002{
         else
             System.out.println("RC_Array_Exception ErrorResult");
         //Result judgment
-        //System.out.println(check_count);
         if(check_count == 28)
             System.out.println("ExpectResult");
     }
@@ -394,7 +393,6 @@ public class RC_Array_02 extends Base_002{
         }catch (NullPointerException e){
             check++;
         }
-        //System.out.println(check);
         if (check == 17)
             return true;
         else

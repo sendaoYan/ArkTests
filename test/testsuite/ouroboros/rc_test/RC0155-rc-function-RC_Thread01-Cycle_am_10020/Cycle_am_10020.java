@@ -52,7 +52,6 @@ class ThreadRc_Cycle_am_10020 extends Thread {
         a1_main.a2_0.a3_0.a5_0.a8_0.a7_0.add();
 
         int result = a1_main.sum + a4_main.sum + a6_main.sum + a9_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a3_0.a5_0.sum + a6_main.a3_0.a5_0.a8_0.a7_0.sum + a6_main.a3_0.a5_0.a8_0.sum + a6_main.a3_0.a10_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
         Cycle_a_10020_2A1 a1_2main = new Cycle_a_10020_2A1("a1_2main");
         a1_2main.a2_0 = new Cycle_a_10020_2A2("a2_0");
         a1_2main.a2_0.a1_0 = a1_2main;
@@ -66,12 +65,10 @@ class ThreadRc_Cycle_am_10020 extends Thread {
         a1_2main.a2_0.a3_0.add();
 
         int result2 = a1_2main.sum + a1_2main.a2_0.sum + a1_2main.a2_0.a3_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
         result += result2;
 
         if (result == 3438)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {

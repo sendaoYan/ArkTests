@@ -58,11 +58,6 @@ public class Alloc_41_45x8B {
         int countSize43 = alloc_test(MAX_43_8B);
         int countSize44 = alloc_test(MAX_44_8B);
         int countSize45 = alloc_test(MAX_45_8B);
-        //System.out.println(countSize41);
-        //System.out.println(countSize42);
-        //System.out.println(countSize43);
-        //System.out.println(countSize44);
-        //System.out.println(countSize45);
 
         if (countSize41 == 581 && countSize42 == 569 && countSize43 == 557 && countSize44 == 547 && countSize45 == 536)
             System.out.println("ExpectResult");

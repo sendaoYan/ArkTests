@@ -29,10 +29,8 @@ class ThreadRc_Nocycle_am_2_00010 extends Thread {
         a2_main.add();
         //		 System.out.printf("RC-Testing_Result=%d\n",a1_main.sum+a1_main.b1_0.sum+a1_main.b2_0.sum+a1_main.b3_0.sum);
         int result = a1_main.sum + a1_main.b1_0.sum + a1_main.b2_0.sum + a1_main.b3_0.sum + a2_main.sum;
-        //System.out.println("RC-Testing_Result="+result);
         if (result == 1939)
             checkout = true;
-        //System.out.println(checkout);
     }
     public boolean check() {
         return checkout;

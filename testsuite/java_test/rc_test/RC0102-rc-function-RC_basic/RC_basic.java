@@ -89,6 +89,5 @@ public class RC_basic {
         Test2();
     }
     public static void consume(Object obj) {
-        //System.out.println("do noting");
     }
 }

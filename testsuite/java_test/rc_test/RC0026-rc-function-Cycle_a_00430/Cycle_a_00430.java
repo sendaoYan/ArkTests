@@ -103,7 +103,6 @@ public class Cycle_a_00430 {
         a1_main.a2_0.a3_0.add();
         a1_main.a2_0.a4_0.add();
         int result = a1_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a4_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
         if (result == 1124)
             System.out.println("ExpectResult");
     }

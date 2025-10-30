@@ -36,8 +36,6 @@ public class StringReflectAPITest {
             e.printStackTrace();
             processResult -= 10;
         }
-        //System.out.println(result);
-        //System.out.println(StringReflectAPITest.res);
         if (result == 2 && processResult == 126) {
             result = 0;
         }
@@ -435,7 +433,6 @@ public class StringReflectAPITest {
             e.printStackTrace();
         } catch (InvocationTargetException e) {
             //e.printStackTrace();
-            //System.out.println("===============fail2");
             processResult -= 2;
         } catch (IllegalAccessException e) {
             e.printStackTrace();
@@ -865,7 +862,6 @@ public class StringReflectAPITest {
         try {
             Method m = String.class.getMethod("hashCode");//	hashCode()
             int result = (int) m.invoke(string);
-            //System.out.println(result);
             if (String.valueOf(result) != null) {
                 processResult -= 2;
             }
@@ -886,7 +882,6 @@ public class StringReflectAPITest {
             Object args[] = {1, 3};
             Method m = String.class.getMethod("indexOf", argsClass);//	indexOf(int ch, int fromIndex)
             int result = (int) m.invoke(string, args);
-            //System.out.println(result);
             if (String.valueOf(result) != null) {
                 processResult -= 2;
             }
@@ -927,7 +922,6 @@ public class StringReflectAPITest {
             Object args[] = {3};
             Method m = String.class.getMethod("indexOf", argsClass);//	indexOf(int ch)
             int result = (int) m.invoke(string, args);
-            //System.out.println(result);
             if (result == -1) {
                 processResult -= 2;
             }
@@ -948,7 +942,6 @@ public class StringReflectAPITest {
             Object args[] = {"c", 0};
             Method m = String.class.getMethod("indexOf", argsClass);//indexOf(String str, int fromIndex)
             int result = (int) m.invoke(string, args);
-            //System.out.println(result);
             if (result > 0) {
                 processResult -= 2;
             }
@@ -967,7 +960,6 @@ public class StringReflectAPITest {
         try {
             Method m = String.class.getMethod("intern");//intern()
             String result = (String) m.invoke(string);
-            //System.out.println(result);
             if (result != null) {
                 processResult -= 2;
             }
@@ -986,7 +978,6 @@ public class StringReflectAPITest {
         try {
             Method m = String.class.getMethod("isEmpty");//isEmpty()
             boolean flag = (boolean) m.invoke(string);
-            //System.out.println(flag);
             if (flag) {
                 processResult -= 2;
             }
@@ -1008,7 +999,6 @@ public class StringReflectAPITest {
             Object args[] = {"F", charSequences};
             Method m = String.class.getMethod("join", argsClass);//join(CharSequence delimiter, CharSequence... elements)
             String result = (String) m.invoke(string, args);
-            //System.out.println(result);
             if ("G".equals(result)) {
                 processResult -= 2;
             }
@@ -1032,7 +1022,6 @@ public class StringReflectAPITest {
             Object args[] = {delimiter, list};
             Method m = String.class.getMethod("join", argsClass);//join(CharSequence delimiter, Iterable<? extends CharSequence> elements)
             String result = (String) m.invoke(string, args);
-            //System.out.println(result);
             if ("JDK-8-String-join".equals(result)) {
                 processResult -= 2;
             }
@@ -1053,7 +1042,6 @@ public class StringReflectAPITest {
             Object args[] = {1};
             Method m = String.class.getMethod("lastIndexOf", argsClass);//	lastIndexOf(int ch)
             int result = (int) m.invoke(string, args);
-            //System.out.println(result);
             if (result == -1) {
                 processResult -= 2;
             }
@@ -1074,7 +1062,6 @@ public class StringReflectAPITest {
             Object args[] = {"c", 0};
             Method m = String.class.getMethod("lastIndexOf", argsClass);//	lastIndexOf(String str, int fromIndex)
             int result = (int) m.invoke(string, args);
-            //System.out.println(result);
             if (result == -1) {
                 processResult -= 2;
             }
@@ -1095,7 +1082,6 @@ public class StringReflectAPITest {
             Object args[] = {"c"};
             Method m = String.class.getMethod("lastIndexOf", argsClass);//lastIndexOf(String str)
             int result = (int) m.invoke(string, args);
-            //System.out.println(result);
             if (result > 0) {
                 processResult -= 2;
             }
@@ -1116,7 +1102,6 @@ public class StringReflectAPITest {
             Object args[] = {1, 0};
             Method m = String.class.getMethod("lastIndexOf", argsClass);//	lastIndexOf(int ch, int fromIndex)
             int result = (int) m.invoke(string, args);
-            //System.out.println(result);
             if (result == -1) {
                 processResult -= 2;
             }
@@ -1155,7 +1140,6 @@ public class StringReflectAPITest {
             Object args[] = {"abc123"};
             Method m = String.class.getMethod("matches", argsClass);//matches(String regex)
             boolean flag = (boolean) m.invoke(string, args);
-            //System.out.println(flag);
             if (flag) {
                 processResult -= 2;
             }
@@ -1176,7 +1160,6 @@ public class StringReflectAPITest {
             Object args[] = {1, 2};
             Method m = String.class.getMethod("offsetByCodePoints", argsClass);//offsetByCodePoints(int index, int codePointOffset)
             int result = (int) m.invoke(string, args);
-            //System.out.println(result);
             if (result > 0) {
                 processResult -= 2;
             }
@@ -1198,7 +1181,6 @@ public class StringReflectAPITest {
             Object args[] = {true, 1, "abc123", 2, 3};
             Method m = String.class.getMethod("regionMatches", argsClass);//regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len)
             boolean flag = (boolean) m.invoke(string, args);
-            //System.out.println(flag);
             if (!flag) {
                 processResult -= 2;
             }
@@ -1219,7 +1201,6 @@ public class StringReflectAPITest {
             Object args[] = {0, "abc123", 1, 2};
             Method m = String.class.getMethod("regionMatches", argsClass);//	regionMatches(int toffset, String other, int ooffset, int len)
             boolean flag = (boolean) m.invoke(string, args);
-            //System.out.println(flag);
             if (!flag) {
                 processResult -= 2;
             }
@@ -1242,7 +1223,6 @@ public class StringReflectAPITest {
             Object args[] = {charSequence, charSequence1};
             Method m = String.class.getMethod("replace", argsClass);//	replace(charSequence  target, CharSequence replacement)
             String result = (String) m.invoke(string, args);
-            //System.out.println(result);
             if (result.contains("ABC")) {
                 processResult -= 2;
             }
@@ -1265,7 +1245,6 @@ public class StringReflectAPITest {
             Object args[] = {ch, ch1};
             Method m = String.class.getMethod("replace", argsClass);//	replace(char oldChar, char newChar)
             String str = (String) m.invoke(string, args);
-            //System.out.println(str);
             if (str.contains("F")) {
                 processResult -= 2;
             }
@@ -1286,7 +1265,6 @@ public class StringReflectAPITest {
             Object args[] = {"abc", "ABC"};
             Method m = String.class.getMethod("replaceAll", argsClass);//replaceAll(String regex, String replacement)
             String result = (String) m.invoke(string, args);
-            //System.out.println(result);
             if (result.contains("ABC")) {
                 processResult -= 2;
             }
@@ -1307,7 +1285,6 @@ public class StringReflectAPITest {
             Object args[] = {"abc", "ABC"};
             Method m = String.class.getMethod("replaceFirst", argsClass);//	replaceFirst(String regex, String replacement)
             String str = (String) m.invoke(string, args);
-            //System.out.println(str);
             if (str.contains("ABC")) {
                 processResult -= 2;
             }
@@ -1328,7 +1305,6 @@ public class StringReflectAPITest {
             Object args[] = {"b", 2};
             Method m = String.class.getMethod("split", argsClass);//split(String regex, int limit)
             String[] result = (String[]) m.invoke(string, args);
-            //System.out.println(result.length);
             if (result.length > 0) {
                 processResult -= 2;
             }
@@ -1349,7 +1325,6 @@ public class StringReflectAPITest {
             Object args[] = {"b"};
             Method m = String.class.getMethod("split", argsClass);//split(String regex)
             String[] result = (String[]) m.invoke(string, args);
-            //System.out.println(result.length);
             if (result.length > 0) {
                 processResult -= 2;
             }
@@ -1370,7 +1345,6 @@ public class StringReflectAPITest {
             Object args[] = {"a"};
             Method m = String.class.getMethod("startsWith", argsClass);//	startsWith(String prefix)
             boolean result = (boolean) m.invoke(string, args);
-            //System.out.println(result);
             if (result) {
                 processResult -= 2;
             }
@@ -1391,7 +1365,6 @@ public class StringReflectAPITest {
             Object args[] = {"b", 1};
             Method m = String.class.getMethod("startsWith", argsClass);//startsWith(String prefix, int toffset)
             boolean result = (boolean) m.invoke(string, args);
-            //System.out.println(result);
             if (result) {
                 processResult -= 2;
             }
@@ -1412,7 +1385,6 @@ public class StringReflectAPITest {
             Object args[] = {0, 3};
             Method m = String.class.getMethod("subSequence", argsClass);//subSequence(int beginIndex, int endIndex)
             CharSequence result = (CharSequence) m.invoke(string, args);
-            //System.out.println(result);
             if (result != null) {
                 processResult -= 2;
             }
@@ -1474,7 +1446,6 @@ public class StringReflectAPITest {
         try {
             Method m = String.class.getMethod("toCharArray");//toCharArray()
             char[] result = (char[]) m.invoke(string);
-            //System.out.println(result.length);
             if (result.length >= 0) {
                 processResult -= 2;
             }
@@ -1493,7 +1464,6 @@ public class StringReflectAPITest {
         try {
             Method m = String.class.getMethod("toLowerCase");//toLowerCase()
             String result = (String) m.invoke(string);
-            //System.out.println(result);
             if (result != null) {
                 processResult -= 2;
             }
@@ -1514,7 +1484,6 @@ public class StringReflectAPITest {
             Object args[] = {Locale.getDefault()};
             Method m = String.class.getMethod("toLowerCase", argsClass);//toLowerCase(Locale locale)
             String result = (String) m.invoke(string, args);
-            //System.out.println(result);
             if (result != null) {
                 processResult -= 2;
             }
@@ -1629,7 +1598,6 @@ public class StringReflectAPITest {
             Object args[] = {d};
             Method m = String.class.getMethod("valueOf", argsClass);//valueOf(double d)
             String result = (String) m.invoke(null, args);
-            //System.out.println(result);
             if ("11.23".equals(result)) {
                 processResult -= 2;
             }
@@ -1650,7 +1618,6 @@ public class StringReflectAPITest {
             Object args[] = {chars, 1, 3};
             Method m = String.class.getMethod("valueOf", argsClass);//valueOf(char[] data, int offset, int count)
             String result = (String) m.invoke(string, args);
-            //System.out.println(result);
             if ("bcd".equals(result)) {
                 processResult -= 2;
             }
@@ -1690,7 +1657,6 @@ public class StringReflectAPITest {
             Object args[] = {1};
             Method m = String.class.getMethod("valueOf", argsClass);//valueOf(int i)
             String result = (String) m.invoke(string, args);
-            //System.out.println(result);
             if ("1".equals(result)) {
                 processResult -= 2;
             }
@@ -1710,7 +1676,6 @@ public class StringReflectAPITest {
             Object args[] = {'a'};
             Method m = String.class.getMethod("valueOf", argsClass);//valueOf(char c)
             String result = (String) m.invoke(string, args);
-            //System.out.println(result);
             if ("a".equals(result)) {
                 processResult -= 2;
             }
@@ -1731,7 +1696,6 @@ public class StringReflectAPITest {
             Object args[] = {l};
             Method m = String.class.getMethod("valueOf", argsClass);//valueOf(long l)
             String result = (String) m.invoke(string, args);
-            //System.out.println(result);
             if ("1000000000".equals(result)) {
                 processResult -= 2;
             }
@@ -1751,7 +1715,6 @@ public class StringReflectAPITest {
             Object args[] = {string};
             Method m = String.class.getMethod("valueOf", argsClass);//valueOf(Object obj)
             String result = (String) m.invoke(string, args);
-            //System.out.println(result);
             if (string.equals(result)) {
                 processResult -= 2;
             }

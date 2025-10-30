@@ -32,7 +32,6 @@ class Alloc_Thread2_50x8B_01 extends Thread {
             }
         }
         int check_size=store.size();
-        //System.out.println(check_size);
         if(check_size == 237701)
             checkout=true;
     }

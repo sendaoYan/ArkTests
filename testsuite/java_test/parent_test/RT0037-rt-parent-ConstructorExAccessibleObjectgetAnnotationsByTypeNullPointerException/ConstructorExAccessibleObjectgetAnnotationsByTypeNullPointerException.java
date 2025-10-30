@@ -43,8 +43,6 @@ public class ConstructorExAccessibleObjectgetAnnotationsByTypeNullPointerExcepti
             // <T extends Annotation> T[] getAnnotationsByType(Class<T> annotationClass)
             AccessibleObject sampleconstructor = SampleClass2.class.getConstructor(String.class);
             CustomAnnotations2[] a = sampleconstructor.getAnnotationsByType(CustomAnnotations2.class);
-            //System.out.println(a.toString());
-            //System.out.println(a[0].toString());
             if (a.length == 1 && a.getClass().toString().equals("class [LCustomAnnotations2;")) {
                 ConstructorExAccessibleObjectgetAnnotationsByTypeNullPointerException.res = ConstructorExAccessibleObjectgetAnnotationsByTypeNullPointerException.res - 2;
             }
@@ -59,8 +57,6 @@ public class ConstructorExAccessibleObjectgetAnnotationsByTypeNullPointerExcepti
             // <T extends Annotation> T[] getAnnotationsByType(Class<T> annotationClass)
             AccessibleObject sampleconstructor = SampleClass2.class.getConstructor(String.class);
             sampleconstructor.getAnnotationsByType(null);
-            //System.out.println(a.toString());
-            //System.out.println(a[0].toString());
         } catch (SecurityException | NoSuchMethodException e) {
             //e.printStackTrace();
         } catch (NullPointerException e) {

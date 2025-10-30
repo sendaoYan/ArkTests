@@ -73,7 +73,6 @@ public class RC_Array_10 {
         test05();
         check("test05");
         //Result judgment
-        //System.out.println(check_count);
         if(check_count == 11)
             System.out.println("ExpectResult");
     }

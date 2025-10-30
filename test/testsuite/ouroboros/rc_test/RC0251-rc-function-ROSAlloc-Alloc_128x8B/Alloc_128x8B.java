@@ -52,7 +52,6 @@ public class Alloc_128x8B {
         store = new ArrayList<byte[]>();
 
         int result = alloc_test(MAX_128_8B);
-        //System.out.println(result);
         if ( result == 243561)
             System.out.println("ExpectResult");
         else

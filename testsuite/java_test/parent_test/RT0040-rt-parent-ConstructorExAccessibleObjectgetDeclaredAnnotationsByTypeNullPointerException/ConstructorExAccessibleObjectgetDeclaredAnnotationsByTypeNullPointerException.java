@@ -43,7 +43,6 @@ public class ConstructorExAccessibleObjectgetDeclaredAnnotationsByTypeNullPointe
         try {
             sampleconstructor = SampleClass5.class.getConstructor(String.class);
             CustomAnnotations5[] a = sampleconstructor.getDeclaredAnnotationsByType(CustomAnnotations5.class);
-            //System.out.println(a.getClass());
             if (a.length == 1 && a.getClass().toString().equals("class [LCustomAnnotations5;")) {
                 ConstructorExAccessibleObjectgetDeclaredAnnotationsByTypeNullPointerException.res = ConstructorExAccessibleObjectgetDeclaredAnnotationsByTypeNullPointerException.res - 2;
             }
@@ -58,7 +57,6 @@ public class ConstructorExAccessibleObjectgetDeclaredAnnotationsByTypeNullPointe
         try {
             sampleconstructor = SampleClass5.class.getConstructor(String.class);
             sampleconstructor.getDeclaredAnnotationsByType(null);
-            //System.out.println(a.getClass());
         } catch (NoSuchMethodException | SecurityException | NullPointerException e) {
             //e.printStackTrace();
             ConstructorExAccessibleObjectgetDeclaredAnnotationsByTypeNullPointerException.res = ConstructorExAccessibleObjectgetDeclaredAnnotationsByTypeNullPointerException.res - 2;

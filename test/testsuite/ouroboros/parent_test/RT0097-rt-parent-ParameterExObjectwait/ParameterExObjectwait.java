@@ -61,10 +61,8 @@ public class ParameterExObjectwait {
                     param[0].wait();
                     ParameterExObjectwait.res = ParameterExObjectwait.res - 15;
                 } catch (InterruptedException e1) {
-                    //System.out.println("111");
                     ParameterExObjectwait.res = ParameterExObjectwait.res - 1;
                 } catch (IllegalMonitorStateException e2) {
-                    //System.out.println("222");
                     ParameterExObjectwait.res = ParameterExObjectwait.res - 10;
                 }
             }

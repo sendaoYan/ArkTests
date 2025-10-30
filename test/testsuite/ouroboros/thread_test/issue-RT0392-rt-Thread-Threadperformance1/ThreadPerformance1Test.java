@@ -89,16 +89,12 @@ public class ThreadPerformance1Test extends  Thread{
                 }
             }
             endTime = System.currentTimeMillis();
-            //System.out.println(startTime);
-            //System.out.println(endTime);
-            //System.out.println(endTime - startTime);
             ThreadPerformance1Test[ii] = endTime - startTime;
         }
         for(int ii = 0; ii < ThreadPerformance1Test.length; ii++) {
             sum += ThreadPerformance1Test[ii];
         }
         ave = sum / ThreadPerformance1Test.length;
-        //System.out.println("ave=" + ave + "ms");
         System.out.println(0);
         return;
     }

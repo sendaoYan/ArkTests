@@ -195,7 +195,6 @@ public class Nocycle_a_00050 {
 //		 System.out.printf("RC-Testing_Result=%d\n",a1_main.sum+a1_main.b1_0.sum+a1_main.b2_0.sum+a1_main.b3_0.sum+a1_main.b4_0.sum+a1_main.b1_0.c1_0.sum+a1_main.b1_0.c2_0.sum+a1_main.b1_0.c3_0.sum);
 
         int result = a1_main.sum + a1_main.b1_0.sum + a1_main.b2_0.sum + a1_main.b3_0.sum + a1_main.b4_0.sum + a1_main.b1_0.c1_0.sum + a1_main.b1_0.c2_0.sum + a1_main.b1_0.c3_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
         if (result == 5048)
             System.out.println("ExpectResult");
     }

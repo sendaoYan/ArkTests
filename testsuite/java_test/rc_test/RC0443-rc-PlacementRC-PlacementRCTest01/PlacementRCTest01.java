@@ -139,7 +139,6 @@ public class PlacementRCTest01 {
         new PlacementRCTest01().defInsideAndUseOutsideLoop();
         defInBranchInsideLoop();
         infiniteLoop();
-        //System.out.println(result);
         if(result.contains("Method1") && result.contains("Method2") && result.contains("Method3") && result.contains("Method4") && result.contains("Method5") && result.contains("End") && infiniteLoop.className.equals("infinite loop99"))
             System.out.println("ExpectResult");
         else

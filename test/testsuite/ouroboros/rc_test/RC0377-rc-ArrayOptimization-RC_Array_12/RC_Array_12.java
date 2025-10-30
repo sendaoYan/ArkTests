@@ -93,7 +93,6 @@ public class RC_Array_12 {
 
         check("End");
         //Result judgment
-        //System.out.println(check_count);
         if(check_count == 14)
             result = "ExpectResult";
         return result;
@@ -363,7 +362,6 @@ public class RC_Array_12 {
                 check++;
             }
 
-            //System.out.println(check);
             if (check == 8)
                 incCheckCount();
             else

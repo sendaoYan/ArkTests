@@ -81,7 +81,6 @@ class CP_Thread_08_test extends Thread {
         test_CP_Thread_08_A1(10000);
         test_CP_Thread_08_A2(10000);
         int result = a1_main.sum + a1_main.a2_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
         if (result == 404)
             System.out.println("ExpectResult");
     }

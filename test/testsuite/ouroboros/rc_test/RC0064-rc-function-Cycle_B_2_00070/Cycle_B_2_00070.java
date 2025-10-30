@@ -148,7 +148,6 @@ public class Cycle_B_2_00070 {
         a6_0.add();
         a4_0.a3_0.a5_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a1_0.a2_0.a3_0.sum + a4_0.sum + a4_0.a3_0.a5_0.sum + a6_0.sum);
-        //System.out.println(nsum);
         if (nsum == 37)
             System.out.println("ExpectResult");
     }

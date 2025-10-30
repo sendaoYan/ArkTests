@@ -35,10 +35,8 @@ class ThreadRc_00020 extends Thread {
         a1_main.b2_0.add();
 //         System.out.printf("RC-Testing_Result=%d\n",a1_main.sum+a1_main.b1_0.sum+a1_main.b2_0.sum);
         int result = a1_main.sum + a1_main.b1_0.sum + a1_main.b2_0.sum;
-        //System.out.println("RC-Testing_Result_Thread1="+result);
         if (result == 1310)
             checkout = true;
-        //System.out.println(checkout);
 
     }
 

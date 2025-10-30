@@ -36,7 +36,6 @@ class ThreadRc_Cycle_Bm_2_10240 extends Thread {
 
 
         int result = a1_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a1_main.a2_0.a4_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         Cycle_B_2_00240_B1 b1_0 = new Cycle_B_2_00240_B1();
         b1_0.a3_0 = new Cycle_B_2_00240_A3("a3_b1");
@@ -56,11 +55,9 @@ class ThreadRc_Cycle_Bm_2_10240 extends Thread {
         c1_main.c2_0.add();
 //		 System.out.printf("RC-Testing_Result=%d\n",c1_main.sum+c1_main.b1_0.sum);
         int result2 = c1_main.sum + c1_main.c2_0.sum;
-        //System.out.println("RC-Testing_Result="+result2);
 
         if (result == 1124 && nsum == 310 && result2 == 704)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {

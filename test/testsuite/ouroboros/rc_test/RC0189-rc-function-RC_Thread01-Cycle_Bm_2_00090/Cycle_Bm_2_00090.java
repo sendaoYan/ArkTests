@@ -29,11 +29,9 @@ class ThreadRc_Cycle_Bm_2_00090 extends Thread {
         a1_0.a2_0.add();
         a3_0.add();
         int nsum = (a1_0.sum + a1_0.a2_0.sum + a3_0.sum);
-        //System.out.println(nsum);
 
         if (nsum == 9)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {

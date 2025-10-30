@@ -39,7 +39,6 @@ public class ThreadConstructors17 extends Thread {
         try {
             ThreadConstructors17 test_illegal1 = new ThreadConstructors17(null, null);
         } catch (NullPointerException e) {
-            //System.out.println("NullPointerException");
             ecount++;
         }
 

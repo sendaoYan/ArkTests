@@ -64,10 +64,6 @@ public class Alloc_61_64x8B {
         int countSize62 = alloc_test(MAX_62_8B);
         int countSize63 = alloc_test(MAX_63_8B);
         int countSize64 = alloc_test(MAX_64_8B);
-        //System.out.println(countSize61);
-        //System.out.println(countSize62);
-        //System.out.println(countSize63);
-        //System.out.println(countSize64);
 
         if (countSize61 == 549 && countSize62 == 542 && countSize63 == 535 && countSize64 == 528)
             System.out.println("ExpectResult");

@@ -51,7 +51,6 @@ public class Alloc_256x8B {
     public static void main(String[] args) {
         store = new ArrayList<byte[]>();
         int result = alloc_test(MAX_256_8B);
-        //System.out.println(result);
         if (result == 62191)
             System.out.println("ExpectResult");
         else

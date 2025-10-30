@@ -39,7 +39,6 @@ public class ConstructorExAccessibleObjectisAnnotationPresentNullPointerExceptio
             // boolean isAnnotationPresent(Class<? extends Annotation> annotationClass)
             AccessibleObject sampleconstructor = SampleClass7.class.getConstructor(String.class);
             boolean b = sampleconstructor.isAnnotationPresent(CustomAnnotations7.class);
-            //System.out.println(b);
             if (b) {
                 ConstructorExAccessibleObjectisAnnotationPresentNullPointerException.res = ConstructorExAccessibleObjectisAnnotationPresentNullPointerException.res - 2;
             }
@@ -54,7 +53,6 @@ public class ConstructorExAccessibleObjectisAnnotationPresentNullPointerExceptio
             // boolean isAnnotationPresent(Class<? extends Annotation> annotationClass)
             AccessibleObject sampleconstructor = SampleClass7.class.getConstructor(String.class);
             sampleconstructor.isAnnotationPresent(null);
-            //System.out.println(b);
         } catch (NoSuchMethodException | SecurityException | NullPointerException e) {
             ConstructorExAccessibleObjectisAnnotationPresentNullPointerException.res = ConstructorExAccessibleObjectisAnnotationPresentNullPointerException.res - 2;
         }

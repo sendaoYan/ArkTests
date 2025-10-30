@@ -341,7 +341,6 @@ public class RC_Array_13 {
             } catch (NullPointerException e) {
                 check++;
             }
-            //System.out.println(check);
             if (check == 10)
                 incCheckCount();
             else

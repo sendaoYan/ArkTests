@@ -54,11 +54,9 @@ class ThreadRc_00170 extends Thread {
 //		 System.out.printf("RC-Testing_Result=%d\n",a1_main.sum+a2_main.sum+a3_main.sum+a4_main.sum+a1_main.b1_0.sum+a1_main.b2_0.sum+a1_main.b3_0.sum);
 
         int result = a1_main.sum + a2_main.sum + a3_main.sum + a4_main.sum + a1_main.b1_0.sum + a1_main.b2_0.sum + a1_main.b3_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 4046)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {

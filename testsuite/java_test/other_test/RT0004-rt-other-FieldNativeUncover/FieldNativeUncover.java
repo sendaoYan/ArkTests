@@ -74,7 +74,6 @@ public class FieldNativeUncover {
 			Field field = class1.getField("userName");
 			String name = field.getName();//getNameInternal() called by getName();
 			if(name.equals("userName")) {
-			//System.out.println(name);
 			FieldNativeUncover.res = FieldNativeUncover.res - 2;
 			}
 			}catch( NoSuchFieldException e) {
@@ -94,7 +93,6 @@ public class FieldNativeUncover {
 			Field field = class1.getField("userName");
 			Type type = field.getGenericType();//getSignatureAttribute() called by getGenericType(),getSignatureAnnotation() called by getSignatureAttribute();
 			if(type.toString().equals("class java.lang.String")) {
-				//System.out.println(type.toString());
 				FieldNativeUncover.res = FieldNativeUncover.res - 2;
 			}
 			}catch( NoSuchFieldException e) {
@@ -115,7 +113,6 @@ public class FieldNativeUncover {
 			field.set(fieldNativeUncover, "Tom");// set the attribute "userName" as  "Tom";
 			Object object = field.get(fieldNativeUncover);
 			if(object.toString().equals("Tom")) {
-			//System.out.println(object);
 			FieldNativeUncover.res = FieldNativeUncover.res - 2;
 			}
 		} catch (Exception e) {
@@ -136,7 +133,6 @@ public class FieldNativeUncover {
 			field.setBoolean(fieldNativeUncover, true);
 			boolean flags = field.getBoolean(fieldNativeUncover);
 			if(flags) {
-			//System.out.println(flags);
 			FieldNativeUncover.res = FieldNativeUncover.res - 2;
 			}
 		} catch (Exception e) {
@@ -157,7 +153,6 @@ public class FieldNativeUncover {
 			field.setByte(fieldNativeUncover, (byte) 100);
 			byte flags = field.getByte(fieldNativeUncover);
 			if(flags == 100) {
-				//System.out.println(flags);
 				FieldNativeUncover.res = FieldNativeUncover.res - 2;
 			}
 		} catch (Exception e) {
@@ -178,7 +173,6 @@ public class FieldNativeUncover {
 			field.setChar(fieldNativeUncover, 'a');
 			char chars = field.getChar(fieldNativeUncover);
 			if ("a".equals(String.valueOf(chars))) {
-				//System.out.println(chars);
 				FieldNativeUncover.res = FieldNativeUncover.res - 2;
 				return true;
 			}
@@ -200,7 +194,6 @@ public class FieldNativeUncover {
 			field.setShort(fieldNativeUncover, (short) 20);
 			short sh = field.getShort(fieldNativeUncover);
 			if (sh==20) {
-				//System.out.println(sh);
 				FieldNativeUncover.res = FieldNativeUncover.res - 2;
 				return true;
 			}
@@ -222,7 +215,6 @@ public class FieldNativeUncover {
 			field.setInt(fieldNativeUncover, 20);
 			int number = field.getInt(fieldNativeUncover);
 			if (number == 20) {
-				//System.out.println(number);
 				FieldNativeUncover.res = FieldNativeUncover.res - 2;
 				return true;
 			}
@@ -244,7 +236,6 @@ public class FieldNativeUncover {
 			field.setLong(fieldNativeUncover, 20);
 			long number = field.getLong(fieldNativeUncover);
 			if (number == 20) {
-				//System.out.println(number);
 				FieldNativeUncover.res = FieldNativeUncover.res - 2;
 				return true;
 			}
@@ -307,7 +298,6 @@ public class FieldNativeUncover {
 			Field field = class1.getField("doubles");
 			newAnnotation annotation = field.getAnnotation(newAnnotation.class);//getAnnotationNative() called by getAnnotation()
 			if(annotation.toString().equals("@FieldNativeUncover$newAnnotation(name=double1, value=double2)")) {
-			//System.out.println(annotation.toString());
 			FieldNativeUncover.res = FieldNativeUncover.res - 2;
 			}
 		} catch (Exception e) {
@@ -327,7 +317,6 @@ public class FieldNativeUncover {
 			Field field = class1.getField("doubles");
 			newAnnotation[] annotations = field.getAnnotationsByType(newAnnotation.class);//isAnnotationPresentNative() called by getAnnotationsByType()
 			if(annotations.length == 1) {
-			//System.out.println(annotations.length);
 			FieldNativeUncover.res = FieldNativeUncover.res - 2;
 			}
 		} catch (Exception e) {
@@ -348,8 +337,6 @@ public class FieldNativeUncover {
 			Field field = class1.getField("doubles");
 			Annotation[] annotations =field.getDeclaredAnnotations();
 			if(annotations.length == 1 && annotations.getClass().toString().equals("class [Ljava.lang.annotation.Annotation;")) {
-			//System.out.println(annotations.length);
-			//System.out.println(annotations.getClass().toString());
 			FieldNativeUncover.res = FieldNativeUncover.res - 2;
 			}
 		} catch (Exception e) {

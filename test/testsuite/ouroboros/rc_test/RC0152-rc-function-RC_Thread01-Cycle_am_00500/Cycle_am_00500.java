@@ -70,11 +70,9 @@ class ThreadRc_Cycle_am_00500 extends Thread {
 //		 System.out.printf("RC-Testing_Result=%d\n",a1_main.sum+a4_main.sum+a7_main.sum+a1_main.a2_0.sum+a1_main.a2_0.a3_0.sum+a4_main.a5_0.sum+a4_main.a5_0.a6_0.sum+a7_main.a9_0.sum+a7_main.a9_0.a8_0.sum);
 
         int result = a1_main.sum + a4_main.sum + a7_main.sum + a1_main.a2_0.sum + a1_main.a2_0.a3_0.sum + a4_main.a5_0.sum + a4_main.a5_0.a6_0.sum + a7_main.a9_0.sum + a7_main.a9_0.a8_0.sum;
-        //System.out.println("RC-Testing_Result="+result);
 
         if (result == 2099)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {

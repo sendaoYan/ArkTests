@@ -84,7 +84,6 @@ public class ClassNativeUncover {
         try {
             boolean flag = class1.isMemberClass();//getDeclaringClass() called by isMemberClass();
             if (!flag) {
-                //System.out.println(flag);
                 ClassNativeUncover.res = ClassNativeUncover.res - 2;
             }
         } catch (Exception e) {
@@ -103,7 +102,6 @@ public class ClassNativeUncover {
         try {
             String string = class1.getCanonicalName();//getEnclosingClass() called by getCanonicalName();
             if (string.equals("ClassNativeUncover")) {
-                //System.out.println(string);
                 ClassNativeUncover.res = ClassNativeUncover.res - 2;
             }
         } catch (Exception e) {
@@ -120,7 +118,6 @@ public class ClassNativeUncover {
         try {
             boolean flag = class1.isAnonymousClass();
             if (!flag) {
-                //System.out.println(flag);
                 ClassNativeUncover.res = ClassNativeUncover.res - 2;
             }
         } catch (Exception e) {
@@ -137,7 +134,6 @@ public class ClassNativeUncover {
         try {
             Field field = class1.getField("name");//get the whole attributes which named "public" and inherited from parent class;getPublicFieldRecursive() called by getField();
             if (field.toString().equals("public java.lang.String ClassNativeUncover.name")) {
-                //System.out.println(field.toString());
                 ClassNativeUncover.res = ClassNativeUncover.res - 2;
             }
         } catch (Exception e) {
@@ -235,7 +231,6 @@ public class ClassNativeUncover {
         try {
             Field field = class1.getDeclaredField("res");
             if (field.toString().equals("private static int ClassNativeUncover.res")) {
-                //System.out.println(field);
                 ClassNativeUncover.res = ClassNativeUncover.res - 2;
             }
         } catch (NoSuchFieldException e) {
@@ -253,7 +248,6 @@ public class ClassNativeUncover {
         try {
             Constructor constructor = class1.getConstructor(new Class[]{String.class});//getDeclaredConstructorInternal() called by getConstructor;
             if (constructor.toString().equals("public ClassNativeUncover(java.lang.String)")) {
-                //System.out.println(constructor);
                 ClassNativeUncover.res = ClassNativeUncover.res - 2;
             }
         } catch (NoSuchMethodException e) {
@@ -270,7 +264,6 @@ public class ClassNativeUncover {
         try {
             Constructor constructor = class1.getDeclaredConstructor(new Class[]{String.class});//getDeclaredConstructorInternal() called by getDeclaredConstructor();
             if (constructor.toString().equals("public ClassNativeUncover(java.lang.String)")) {
-                //System.out.println(constructor);
                 ClassNativeUncover.res = ClassNativeUncover.res - 2;
             }
         } catch (NoSuchMethodException e) {
@@ -289,7 +282,6 @@ public class ClassNativeUncover {
             String string = class1.getSimpleName();//getInnerClassName() called by getSimpleName();
             if (string.equals("ClassNativeUncover")) {
                 ClassNativeUncover.res = ClassNativeUncover.res - 2;
-                //System.out.println(string);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -305,8 +297,6 @@ public class ClassNativeUncover {
         try {
             TypeVariable[] typeVariables = class1.getTypeParameters();//return a array length 0;getSignatureAnnotation() called by getTypeParameters();
             if (typeVariables.getClass().toString().equals("class [Ljava.lang.reflect.TypeVariable;") && typeVariables.length == 0) {
-                //System.out.println(typeVariables.length);
-                //System.out.println(typeVariables.getClass().toString());
                 ClassNativeUncover.res = ClassNativeUncover.res - 2;
             }
         } catch (Exception e) {
@@ -323,7 +313,6 @@ public class ClassNativeUncover {
         try {
             Type type = class1.getGenericSuperclass();//getSignatureAnnotation()called by getGenericSuperclass;
             if (type.toString().equals("class java.lang.Object")) {
-                //System.out.println(type);
                 ClassNativeUncover.res = ClassNativeUncover.res - 2;
             }
         } catch (Exception e) {
@@ -340,8 +329,6 @@ public class ClassNativeUncover {
 
         Type[] type = class1.getGenericInterfaces();//getSignatureAnnotation() called by getGenericInterfaces;
         if (type.length == 0 && type.getClass().toString().equals("class [Ljava.lang.Class;")) {
-            //System.out.println(type.length);
-            //System.out.println(type.getClass().toString());
             ClassNativeUncover.res = ClassNativeUncover.res - 2;
         }
     }
@@ -355,7 +342,6 @@ public class ClassNativeUncover {
         try {
             Method method = class1.getMethod("ClassDemo1");//getDeclaredMethodInternal() called by getMethod()
             if (method.toString().equals("public static void ClassNativeUncover.ClassDemo1()")) {
-                //System.out.println(method);
                 ClassNativeUncover.res = ClassNativeUncover.res - 2;
             }
         } catch (NoSuchMethodException e) {
@@ -367,8 +353,6 @@ public class ClassNativeUncover {
         try {
             Annotation[] a = class1.getAnnotations(); //getDeclaredAnnotations() called by getAnnotations()
             if (a.length == 0 && a.getClass().toString().equals("class [Ljava.lang.annotation.Annotation;")) {
-                //System.out.println(a.length);
-                //System.out.println(a.getClass().toString());
                 ClassNativeUncover.res = ClassNativeUncover.res - 2;
             }
         } catch (Exception e) {

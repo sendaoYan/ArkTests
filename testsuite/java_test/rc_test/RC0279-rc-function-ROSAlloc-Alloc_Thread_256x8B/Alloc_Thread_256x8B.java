@@ -34,7 +34,6 @@ class Alloc_Thread_256x8B_01 extends Thread {
                 store=new ArrayList<byte[]>();
             }
         }
-       //System.out.println(check_size);
         if(check_size == 142271)
             checkout=true;
     }

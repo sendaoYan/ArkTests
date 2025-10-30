@@ -104,7 +104,6 @@ public class RC_basic {
     }
 
     public static void consume(Object obj) {
-        //System.out.println("do noting");
     }
 }
 // EXEC:%maple  %f %build_option -o %n.so

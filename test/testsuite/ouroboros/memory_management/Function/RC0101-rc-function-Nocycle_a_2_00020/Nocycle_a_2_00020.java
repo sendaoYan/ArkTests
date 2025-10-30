@@ -641,7 +641,6 @@ public class Nocycle_a_2_00020 {
 //         System.out.printf("RC-Testing_Result=%d\n",a1_main.sum+a1_main.b1_0.sum+a1_main.b2_0.sum+a1_main.b3_0.sum+a1_main.b4_0.sum+a1_main.b4_0.c1_0.sum+a1_main.b4_0.c2_0.sum+a1_main.b4_0.c3_0.sum);
 
         int result1 = a1_main.sum + a1_main.b1_0.sum + a1_main.b2_0.sum + a1_main.b3_0.sum + a1_main.b4_0.sum + a1_main.b4_0.c1_0.sum + a1_main.b4_0.c2_0.sum + a1_main.b4_0.c3_0.sum;
-        //System.out.println("RC-Testing_Result="+result1);
         Nocycle_a_2_00020_2A1 a1_main2 = new Nocycle_a_2_00020_2A1("a1_main2");
         a1_main2.b1_0 = new Nocycle_a_2_00020_2B1("b1_0");
         a1_main2.b1_0.c1_0 = new Nocycle_a_2_00020_2C1("c1_0");

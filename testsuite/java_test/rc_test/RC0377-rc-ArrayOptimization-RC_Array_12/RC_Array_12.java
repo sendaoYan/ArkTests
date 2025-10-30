@@ -78,7 +78,6 @@ public class RC_Array_12 {
         t9.join();
         check("End");
         //Result judgment
-        //System.out.println(check_count);
         if(check_count == 14)
             result = "ExpectResult";
         return result;
@@ -330,7 +329,6 @@ public class RC_Array_12 {
             } catch (NullPointerException e) {
                 check++;
             }
-            //System.out.println(check);
             if (check == 8)
                 incCheckCount();
             else

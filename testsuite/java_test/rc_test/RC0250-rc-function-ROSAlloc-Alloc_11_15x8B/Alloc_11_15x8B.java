@@ -54,11 +54,6 @@ public class Alloc_11_15x8B {
         int countSize13 = alloc_test(MAX_13_8B);
         int countSize14 = alloc_test(MAX_14_8B);
         int countSize15 = alloc_test(MAX_15_8B);
-        //System.out.println(countSize11);
-        //System.out.println(countSize12);
-        //System.out.println(countSize13);
-        //System.out.println(countSize14);
-        //System.out.println(countSize15);
         if (countSize11 == 853 && countSize12 == 788 && countSize13 == 728 && countSize14 == 681 && countSize15 == 639)
             System.out.println("ExpectResult");
         else

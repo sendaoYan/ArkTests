@@ -68,7 +68,6 @@ public class Ex_eight_arguments {
         //Result judgment
         if (check_count == 12)
             System.out.println("ExpectResult");
-        //System.out.println(check_count);
     }
     private static void test01(int first, byte second, char third, long four, float five, double six, String seven,
                                boolean eight, Object nine, int[] ten) {

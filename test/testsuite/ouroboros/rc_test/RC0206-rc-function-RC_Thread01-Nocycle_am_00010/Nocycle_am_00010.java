@@ -28,7 +28,6 @@ class ThreadRc_00010 extends Thread {
         // System.out.println("RC-Testing_Result_Thread="+result);
         if (result == 704)
             checkout = true;
-        //System.out.println(checkout);
     }
 
     public boolean check() {

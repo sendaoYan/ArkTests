@@ -58,11 +58,6 @@ public class Alloc_16_20x8B {
         int countSize18 = alloc_test(MAX_18_8B);
         int countSize19 = alloc_test(MAX_19_8B);
         int countSize20 = alloc_test(MAX_20_8B);
-        //System.out.println(countSize16);
-        //System.out.println(countSize17);
-        //System.out.println(countSize18);
-        //System.out.println(countSize19);
-        //System.out.println(countSize20);
 
         if (countSize16 == 604 && countSize17 == 572 && countSize18 == 542 && countSize19 == 517 && countSize20 == 495)
             System.out.println("ExpectResult");

@@ -1272,7 +1272,6 @@ public class StringReflectStringBuilderAPITest {
         try {
             Method method = class1.getMethod("toString");
             String string = (String) method.invoke(StringBuilder);
-            //System.out.println(string);
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
         } catch (SecurityException e) {

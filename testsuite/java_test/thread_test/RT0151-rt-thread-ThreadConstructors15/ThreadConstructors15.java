@@ -24,7 +24,6 @@ public class ThreadConstructors15 extends Thread {
         try {
             ThreadConstructors15 test_illegal1 = new ThreadConstructors15(null, null, null);
         } catch (NullPointerException e) {
-            //System.out.println("NullPointerException");
             ecount++;
         }
         ThreadConstructors15 test_illegal2 = new ThreadConstructors15(null, null, "");
@@ -33,13 +32,11 @@ public class ThreadConstructors15 extends Thread {
         try {
             test_illegal2.join();
         } catch (InterruptedException e) {
-            //System.out.println("NullPointerException");
         }
         test_illegal3.start();
         try {
             test_illegal3.join();
         } catch (InterruptedException e) {
-            //System.out.println("NullPointerException");
         }
         if (i == 2) {
             if (ecount == 1) {

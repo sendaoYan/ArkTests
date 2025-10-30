@@ -48,7 +48,6 @@ class ThreadRc_Cycle_Bm_1_10020 extends Thread {
         nsum += nsum1;
         if (nsum == 61)
             checkout = true;
-        //System.out.println(checkout);
     }
     public boolean check() {
         return checkout;
