@@ -36,7 +36,9 @@ public class UnsafeunparkTest {
     private static int res = 99;
     private static int flag = 0;
     public static void main(String[] args) throws InterruptedException {
-        System.out.println(run(args, System.out));
+        if(0 != run(args, System.out)) {
+            throw new RuntimeException("Test failed");
+        }
     }
 
     private static int run(String[] args, PrintStream out) throws InterruptedException {

@@ -21,7 +21,9 @@ public class StringXByteTest {
     static int seed = 20;
     static Random random = new Random(seed);
     public static void main(String[] args) {
-        System.out.println(run(args, System.out));
+        if(0 != run(args, System.out)) {
+            throw new RuntimeException("Test failed");
+        }
     }
     public static int run(String[] args,PrintStream out) {
         int result = 2;

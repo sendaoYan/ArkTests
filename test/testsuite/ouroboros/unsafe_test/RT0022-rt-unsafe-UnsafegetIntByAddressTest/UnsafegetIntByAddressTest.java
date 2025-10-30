@@ -36,7 +36,9 @@ import java.lang.reflect.Field;
 public class UnsafegetIntByAddressTest {
     private static int res = 99;
     public static void main(String[] args) {
-        System.out.println(run(args, System.out));
+        if(0 != run(args, System.out)) {
+            throw new RuntimeException("Test failed");
+        }
     }
 
     private static int run(String[] args, PrintStream out) {

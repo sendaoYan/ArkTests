@@ -39,7 +39,9 @@ public class UnsafeputOrderedLongTest {
     private static Long offset =0l;
     private static long flag =0l;
     public static void main(String[] args) throws InterruptedException {
-        System.out.println(run(args, System.out));
+        if(0 != run(args, System.out)) {
+            throw new RuntimeException("Test failed");
+        }
     }
 
     private static int run(String[] args, PrintStream out) throws InterruptedException {
